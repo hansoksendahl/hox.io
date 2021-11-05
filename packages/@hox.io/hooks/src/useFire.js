@@ -1,11 +1,11 @@
 import {useReducer} from 'react';
 
-export default function useFire(reducer, initialState, init, name) {
+export default function useFire(reducer, initialState, init, name = 'reducer') {
   const [state, dispatch] = useReducer(
     reducer,
     initialState,
     init,
-    'zui'
+    name,
   );
 
   function fire(type, payload) {
