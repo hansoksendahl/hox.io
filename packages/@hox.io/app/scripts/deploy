@@ -1,0 +1,2 @@
+scripts/build
+gcloud app deploy ./app.flexible.yaml

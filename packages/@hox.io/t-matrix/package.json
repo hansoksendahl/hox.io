@@ -1,0 +1,12 @@
+{
+  "name": "@hox.io/t-matrix",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.js",
+  "source": true,
+  "author": "Hans Oksendahl <hansoksendahl@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@hox.io/matrix": "0.0.0"
+  }
+}

@@ -1,0 +1,59 @@
+.markdown {
+  font-family: Helvetica, arial, sans-serif;
+  line-height: 1.3em;
+}
+
+.markdown a {
+  color: rgb(128, 195, 229);
+}
+
+.markdown strong {
+  font-weight: 800;
+}
+
+hr {
+  margin: 1.5em 0;
+}
+
+.markdown a:visited {
+  color: rgb(128, 135, 229);
+}
+
+.markdown p + p {
+  margin-top: 1em;
+}
+
+.markdown ul + p {
+  margin-top: 1em;
+}
+
+.markdown blockquote {
+  position: relative;
+  background-color: rgb(245,245,245);
+  border-left: 2px solid rgb(230,230,230);
+  padding-left: 1em;
+  padding-bottom: 0;
+  margin-left: 1.5em;
+}
+
+.markdown blockquote:before {
+  content: '💬';
+  position: absolute;
+  left: -1.5em;
+  top: 0;
+}
+
+.markdown h1 {
+  font-size: 1.61em;
+  font-weight: 800;
+  color: rgb(128, 195, 229);
+}
+
+.markdown ul li {
+  margin-left: 1.5em;
+  list-style-type: circle;
+}
+
+.markdown p + blockquote {
+  margin-top: 1em;
+}

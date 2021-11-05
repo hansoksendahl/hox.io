@@ -1,0 +1,1 @@
+This is a folder for things I tried and didn't end up adopting.

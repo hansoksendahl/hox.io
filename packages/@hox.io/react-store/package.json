@@ -1,0 +1,14 @@
+{
+  "name": "@hox.io/react-store",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "source": true,
+  "author": "Hans Oksendahl <hansoksendahl@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "reinspect": "^1.0.1"
+  },
+  "alias": {
+    "react": "react"
+  }
+}

@@ -1,0 +1,2 @@
+echo "Attempting to install ${1} in package ${2}"
+lerna add ${1} --dev --scope=${2}

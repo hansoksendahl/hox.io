@@ -1,0 +1,14 @@
+{
+  "name": "@hox.io/react-form",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "source": true,
+  "author": "Hans Oksendahl <hansoksendahl@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@hox.io/react-store": "0.0.0"
+  },
+  "alias": {
+    "react": "react"
+  }
+}

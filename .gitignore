@@ -1,0 +1,11 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+node_modules
+packages/*/.flowconfig
+flow-typed
+packages/*/flow-typed
+.DS_Store
+*.map
+yarn-error.log
+packages/*/build
+packages/*/.cache

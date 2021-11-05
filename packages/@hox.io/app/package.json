@@ -1,0 +1,55 @@
+{
+  "name": "@hox.io/app",
+  "private": true,
+  "version": "0.0.0",
+  "description": "hox.io",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "scripts/build",
+    "clean": "scripts/clean",
+    "deploy": "scripts/deploy",
+    "dev": "scripts/dev",
+    "start": "scripts/start"
+  },
+  "keywords": [],
+  "author": "Hans Oksendahl",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-stage-0": "^7.0.0",
+    "@hox.io/components": "0.0.0",
+    "@hox.io/hooks": "0.0.0",
+    "@hox.io/rando": "0.0.0",
+    "@hox.io/react-form": "^0.0.0",
+    "@hox.io/react-store": "0.0.0",
+    "@hox.io/use-dexie": "0.0.0",
+    "@hox.io/use-lottie": "0.0.0",
+    "@types/react": "^16.8.17",
+    "@types/react-dom": "^16.8.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "dexie": "^2.0.4",
+    "katex": "^0.10.2",
+    "lottie-web": "^5.5.3",
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-static-files-copy": "^2.1.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-svg": "^10.0.9",
+    "reinspect": "^1.0.1",
+    "rmwc": "^5.5.1",
+    "showdown": "^1.9.0",
+    "showdown-katex": "^0.6.0"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "staticFiles": {
+    "staticPath": "static",
+    "watcherGlob": "**"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
+}

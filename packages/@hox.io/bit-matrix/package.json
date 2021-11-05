@@ -1,0 +1,12 @@
+{
+  "name": "@hox.io/bit-matrix",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.mjs",
+  "source": true,
+  "author": "Hans Oksendahl <hansoksendahl@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "matrix": "0.0.0"
+  }
+}

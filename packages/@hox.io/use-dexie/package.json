@@ -1,0 +1,14 @@
+{
+  "name": "@hox.io/use-dexie",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "source": true,
+  "author": "Hans Oksendahl <hansoksendahl@gmail.com>",
+  "license": "MIT",
+  "alias": {
+    "react": "react"
+  },
+  "devDependencies": {
+    "dexie": "^2.0.4"
+  }
+}
