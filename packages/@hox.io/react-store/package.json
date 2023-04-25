@@ -1,7 +1,7 @@
 {
   "name": "@hox.io/react-store",
   "version": "0.0.0",
-  "main": "src/index.js",
+  "main": "src/index.jsx",
   "source": true,
   "author": "Hans Oksendahl <hansoksendahl@gmail.com>",
   "license": "MIT",

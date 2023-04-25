@@ -1,4 +1,3 @@
-// TODO find out why Yarn workspaces are fxored.
 import Matrix from 'matrix';
 
 export default class TMatrix extends Matrix {

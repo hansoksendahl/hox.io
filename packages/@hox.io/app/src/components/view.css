@@ -31,8 +31,7 @@ hr {
   position: relative;
   background-color: rgb(245,245,245);
   border-left: 2px solid rgb(230,230,230);
-  padding-left: 1em;
-  padding-bottom: 0;
+  padding: 0.5em 0.5em 0 1em;
   margin-left: 1.5em;
 }
 

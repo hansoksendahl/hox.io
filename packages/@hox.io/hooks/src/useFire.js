@@ -1,4 +1,5 @@
 import {useReducer} from 'react';
+import { useReducer as useR } from 'reinspect'
 
 export default function useFire(reducer, initialState, init, name = 'reducer') {
   const [state, dispatch] = useReducer(
