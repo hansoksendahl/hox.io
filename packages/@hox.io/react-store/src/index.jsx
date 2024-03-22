@@ -17,11 +17,9 @@ export default function createStore() {
     );
 
     return (
-      <>
-        <context.Provider value={{state, fire}}>
-          {children}
-        </context.Provider>
-      </>
+      <context.Provider value={{state, fire}}>
+        {children}
+      </context.Provider>
     );
   }
 

@@ -4,5 +4,8 @@
   "private": true,
   "workspaces": [
     "packages/@hox.io/*"
-  ]
+  ],
+  "scripts": {
+    "start": "pnpm run -C ./packages/hox.io/app start"
+  }
 }
