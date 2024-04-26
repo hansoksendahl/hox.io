@@ -82,6 +82,7 @@ function CardContent({
         boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.33)',
         borderRadius: '1vmin',
         overflow: 'hidden',
+        position: 'relative',
         flexDirection,
       }}
     >

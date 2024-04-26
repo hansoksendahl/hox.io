@@ -1,0 +1,40 @@
+@keyframes colorShift {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes goDownOpacity {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.goDown {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  height: 200px;
+  opacity: 0%;
+  animation: 0.3s goDownOpacity 2s forwards;
+}
+
+.goDown .chevron1 {
+  animation: 1.0s linear 0.0s infinite alternate colorShift;
+}
+
+.goDown .chevron2 {
+  animation: 1.0s linear 0.3s infinite alternate colorShift;
+}
+
+.goDown .chevron3 {
+  animation: 1.0s linear 0.6s infinite alternate colorShift;
+}

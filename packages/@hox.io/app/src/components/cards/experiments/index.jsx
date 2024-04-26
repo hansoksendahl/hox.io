@@ -37,13 +37,20 @@ function Experiments() {
 
 <br /><br />
 
+# Resume
+
+---
+
+📄 <a href="/_Hans_Oksendahl_Resume.pdf" download>Resume</a>
+
+<br /><br />
+
 # Social Profiles
 
 ---
 
 - [Github](https://github.com/hansoksendahl)
 - [LinkedIn](https://www.linkedin.com/in/hansoksendahl/)
-- [Twitter](https://twitter.com/hansoksendahl)
 
             `} />
           </Spacing>

@@ -1,9 +1,10 @@
 import React, {useContext} from 'react';
-import {panelContext} from '../panel';
-import {goldenContext} from '../golden';
+import {panelContext} from '../../panel'
+import {goldenContext} from '../../golden'
 import {usePath} from '@hox.io/hooks';
-import Card from '../card';
-import getNorm from '../../utils/getNorm';
+import Card from '../../card';
+import getNorm from '../../../utils/getNorm'
+import GoDown from './go-down'
 
 const viewBoxes = {
   landscape: [[0, 0], [1110, 700]],
@@ -129,6 +130,7 @@ function IntroAnimation() {
           </g>
         ))}
       </svg>
+      {normal === 0 && <GoDown />}
     </>
   )
 }
