@@ -45,3 +45,21 @@ Anyway, yesterday I started working on a
 (PEG) that is implemented in TypeScript. I've managed to create string matchers
 that follow all of the rules related to how the operators in a Parsing
 Expression Grammar are meant to work.
+
+Here is a little taste. 😋
+
+```typescript
+type ConsumeRight<
+  A extends string,
+  B extends string,
+> = B extends `${A}${infer C}` ? C : never
+
+type Sequence<
+  A extends string,
+  B extends string,
+  C extends string,
+> = ConsumeRight<B, ConsumeRight<A, C>>
+
+// Hover over `TestSequence`
+type TestSequence = Sequence<'abc', 'def', 'abcdefghi'>
+```
