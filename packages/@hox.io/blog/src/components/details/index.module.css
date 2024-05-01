@@ -1,0 +1,16 @@
+.details {
+  padding-left: 0.5rem;
+}
+
+.summary {
+  cursor: pointer;
+  margin-left: -0.5rem;
+}
+
+.summary::before {
+  content: '▶️ ';
+}
+
+.details[open] > .summary::before {
+  content: '🔽 '
+}

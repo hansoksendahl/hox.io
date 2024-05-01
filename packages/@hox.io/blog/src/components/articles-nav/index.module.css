@@ -1,0 +1,18 @@
+.articles-nav {
+  font-size: 1.75rem;
+}
+
+.date-list {
+  display: table;
+}
+
+.date-row {
+  display: table-row;
+}
+
+.date-container {
+  display: table-cell;
+  width: 3rem;
+  text-align: right;
+  padding-right: 0.5rem;
+}

@@ -1,0 +1,42 @@
+{
+  "articles": [
+    {
+      "title": "🐉 The Ouroboros Combinator",
+      "date": "2024-04-30"
+    },
+    {
+      "title": "🆕 The blog",
+      "date": "2024-04-29"
+    },
+    {
+      "title": "😮‍💨 A lazy day",
+      "date": "2024-04-28"
+    },
+    {
+      "title": "😅 Still Under Construction...",
+      "date": "2024-04-27"
+    },
+    {
+      "title": "🚧 Under Construction...",
+      "date": "2024-04-26"
+    }
+  ],
+  "tagCounts": [
+    [
+      "test",
+      2
+    ],
+    [
+      "typeScript",
+      1
+    ],
+    [
+      "recreational mathematics",
+      1
+    ],
+    [
+      "functional programming",
+      1
+    ]
+  ]
+}

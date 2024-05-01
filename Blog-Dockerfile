@@ -1,0 +1,20 @@
+# Set up PNPM
+FROM node:latest as dependencies
+WORKDIR /app
+RUN corepack enable
+COPY . . 
+
+# Install app dependencies
+RUN pnpm install
+
+# Build production image
+FROM dependencies as builder
+
+# Build app
+WORKDIR /app/packages/hox.io/blog
+RUN pnpm run build
+
+# Run the server
+WORKDIR /app
+EXPOSE 8080
+CMD ["pnpm", "run", "start"]

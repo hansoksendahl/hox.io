@@ -1,0 +1,8 @@
+.link {
+  color: #80c3e5;
+  font-weight: bold;
+}
+
+.link:visited {
+  color: rgb(128, 135, 229);
+}

@@ -1,0 +1,82 @@
+.article-container > pre > code {
+  display: none;
+  pointer-events: auto;
+}
+
+.article-container a {
+  color: rgb(128, 195, 229);
+}
+
+.article-container strong {
+  font-weight: 800;
+}
+
+hr {
+  margin: 1.5em 0;
+}
+
+.article-container a:visited {
+  color: rgb(128, 135, 229);
+}
+
+.article-container p {
+  margin-bottom: 1em;
+  line-height: calc(1.5em);
+  color: rgb(80, 80, 80);
+}
+
+.article-container blockquote {
+  position: relative;
+  background-color: rgb(245, 245, 245);
+  border-left: 2px solid rgb(230, 230, 230);
+  padding: 0.5em 0.5em 0.01em 1em;
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.article-container blockquote:before {
+  content: '💬';
+  position: absolute;
+  left: -1.5em;
+  top: 0;
+}
+
+.article-container h1,
+.article-container h2,
+.article-container h3,
+.article-container h4,
+.article-container h5,
+.article-container h6 {
+  line-height: calc(1em + 0.5rem);
+}
+
+.article-container h1 {
+  font-size: 1.61em;
+  font-weight: 800;
+  color: rgb(128, 195, 229);
+  margin-bottom: 0.5em;
+}
+
+.article-container h2 {
+  font-size: 1.33em;
+  font-weight: 800;
+  color: rgb(128, 195, 229);
+  margin-bottom: 0.5em;
+}
+
+.article-container ul {
+  margin-bottom: 1em;
+}
+
+.article-container ul li {
+  margin-left: 1.5em;
+  list-style-type: circle;
+}
+
+.article-container::after {
+  content: '-- 𝔥𝔞𝔫𝔰 --';
+}
+
+p code {
+  font-family: 'Courier New', Courier, monospace;
+}
