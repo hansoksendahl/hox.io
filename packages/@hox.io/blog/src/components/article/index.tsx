@@ -1,23 +1,20 @@
-import { createAsync, useParams } from '@solidjs/router'
-import { createEffect, createSignal, onCleanup } from 'solid-js'
+import { createAsync } from '@solidjs/router'
+import { createEffect, onCleanup } from 'solid-js'
 import marked from '~/lib/marked'
 import client from '~/lib/trpc/client'
 import getDateParts from '~/utils/get-date-parts'
 import { articleContainer } from './index.module.css'
 
-const Article = () => {
+export interface ArticleProps {
+  date: string
+}
+
+const Article = (props: ArticleProps) => {
   let ref: HTMLDivElement | undefined
 
-  const params = useParams()
-  const [date, setDate] = createSignal(params.date)
-
-  createEffect(() => {
-    setDate(params.date)
-  })
-
   const article = createAsync(async () => {
-    const entry = await client.article.read.query({ date: date() })
-    const { year, month, day } = getDateParts(date())
+    const entry = await client.article.read.query({ date: props.date })
+    const { year, month, day } = getDateParts(props.date)
     const prettyDate = `${month} ${day}, ${year}`
 
     const markup = await marked.parse(
