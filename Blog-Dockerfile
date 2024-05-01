@@ -15,5 +15,6 @@ WORKDIR /app/packages/@hox.io/blog
 RUN pnpm run build
 
 # Run the server
+WORKDIR /app/packages/@hox.io/blog
 EXPOSE 8080
 CMD ["pnpm", "run", "start"]
