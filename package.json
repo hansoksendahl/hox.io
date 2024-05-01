@@ -6,8 +6,8 @@
     "packages/@hox.io/*"
   ],
   "scripts": {
-    "create-env": "printenv > ./packages/swiftmindinstitute.org/.env",
-    "start": "pnpm run -C ./packages/hox.io/app start"
+    "create-env": "printenv > ./packages/@hox.io/.env",
+    "start": "pnpm run -C ./packages/@hox.io/app start"
   },
   "packageManager": "pnpm@8.14.1+sha256.2df78e65d433d7693b9d3fbdaf431b2d96bb4f96a2ffecd51a50efe16e50a6a8",
   "devDependencies": {
