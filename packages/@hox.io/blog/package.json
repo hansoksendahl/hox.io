@@ -9,12 +9,12 @@
     "generate-meta": "dotenvx run -- bun run ./src/utils/generate-meta.ts"
   },
   "dependencies": {
-    "@dotenvx/dotenvx": "^0.35.1",
+    "@dotenvx/dotenvx": "^0.37.1",
     "@hox.io/create-state-provider": "workspace:^",
-    "@kobalte/core": "^0.12.6",
+    "@kobalte/core": "^0.13.0",
     "@recon-struct/utils": "^1.0.5",
     "@solidjs/meta": "^0.29.3",
-    "@solidjs/router": "^0.13.2",
+    "@solidjs/router": "^0.13.3",
     "@solidjs/start": "1.0.0-rc.0",
     "@trpc/client": "11.0.0-rc.354",
     "@trpc/server": "11.0.0-rc.354",
@@ -23,12 +23,12 @@
     "monaco-editor": "^0.48.0",
     "solid-js": "^1.8.17",
     "vinxi": "^0.3.11",
-    "zod": "^3.23.4"
+    "zod": "^3.23.5"
   },
   "engines": {
     "node": ">=18"
   },
   "devDependencies": {
-    "@recon-struct/utility-types": "^1.0.4"
+    "@recon-struct/utility-types": "^1.2.10"
   }
 }

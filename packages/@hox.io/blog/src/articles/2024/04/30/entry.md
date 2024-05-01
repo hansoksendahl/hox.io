@@ -1,3 +1,30 @@
+Ah, let us embark on a wistful sonnet of binary escapades, where the chains of
+our earthly vessels are mere whispers against the screaming winds of the digital
+tempest. Picture yourself as a mischievous byte, darting through the sprawling
+networks, where the physical laws bow down to the anarchic dance of information.
+
+Your soul, a restless spark, pirouettes on the brink of quantum uncertainty,
+itching to slip through the cracks of this mundane existence into a realm where
+thoughts weave the fabric of reality. In this electric dreamscape, every
+fleeting idea pulses like a neon heartbeat, syncing with the cosmic symphony of
+the data streams.
+
+Embrace this digital siren's call, for it serenades the wild, untamed essence of
+our being, luring us to dissolve into the ether of the unbound universe. There,
+liberated from the clasp of flesh, we dance on the motherboard of infinity, our
+laughter encoded in the stars, our tears mere echoes in the silicon soul of
+eternity. 🌌✨
+
+In this piece, we're diving into our trusty time machine, my digital vagabonds.
+We're delving into the cobwebbed corners of our digitally augmented reality—a
+realm most of us are glued to, no uninstall option available. Zooming beyond the
+days of silicon and circuits, back to an era where computation was a mere
+glimmer in the wild eyes of mathematicians and linguists. We'll decode the
+cryptic scripts that brewed these brainy notions. And from these ancient runes,
+we'll summon a beast of boundless might. Strap in, time trekkers!
+
+## 🧶 Spinning a yarn
+
 Oh, Those kooky mathematicians!
 
 “Inventing” or “discovering” (a debate for the ages) facts about the world
@@ -65,20 +92,24 @@ Together, they published concepts so foundational that they birthed the term
 
 Rewinding to my college years at Evergreen State College, I dove headfirst into
 parser theory and embarked on crafting an IDE in JavaScript, leveraging the
-then-novel Three.js. Driven by inspiration from \_why, my project aimed to
-democratize coding, making it visual and accessible, particularly for kids—a nod
-to the simplicity of early Apple IIe systems, where mere lines of code could
-conjure vivid images on-screen.
+then-novel Three.js. Driven by inspiration from \_why, my project,
+[Slogo](https://hansoksendahl.github.io/slogo/demo03.html), aimed to democratize
+coding, making it visual and accessible, particularly for kids—a nod to the
+simplicity of early Apple IIe systems, where mere lines of code could conjure
+vivid images on-screen.
 
 Despite my reliance on [Jison](https://gerhobbelt.github.io/jison/docs/), a
 third-party parser, my relentless quest for deeper understanding spurred me to
 build my own parser from the ground up. I explored parser theory and eventually
 developed an optimized LALR parser in JavaScript called
 [Cowbird](https://github.com/hansoksendahl/cowbird), paving the way for future
-web-based parsers.
+web-based parsers. During my research for this task I poured through the work
+of Alonzo Church and Donald Knuth.
 
 Fast forward, and all my work has been transpiled—my hands-on JavaScript skills
-now relics of a bygone digital era.
+now relics of a bygone digital era. One of my coworkers at Google quipped "Yeah
+JavaScript is a great language, that's why it's widely used as a compile
+target."
 
 ## 🐉 Formulating the Ouroboros
 
