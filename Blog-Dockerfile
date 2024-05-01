@@ -1,5 +1,5 @@
-# Set up PNPM
-FROM node:latest as dependencies
+# Set up Bun
+FROM oven/bun:latest as dependencies
 WORKDIR /app
 RUN corepack enable
 COPY . . 
@@ -11,10 +11,10 @@ RUN pnpm install
 FROM dependencies as builder
 
 # Build app
-WORKDIR /app/packages/@hox.io/blog
-RUN pnpm run build
+WORKDIR /app/packages/swiftmindinstitute.org
+RUN bun run build
 
 # Run the server
 WORKDIR /app
 EXPOSE 8080
-CMD ["pnpm", "run", "start"]
+CMD ["bun", "run", "start"]
