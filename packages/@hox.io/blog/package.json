@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "dotenvx run -- vinxi dev",
     "build": "vinxi build",
-    "start": "dotenvx run -- vinxi start",
+    "start": "pwd && ls && cat ./.env && dotenvx run -- vinxi start",
     "version": "vinxi version",
     "generate-meta": "dotenvx run -- bun run ./src/utils/generate-meta.ts"
   },
