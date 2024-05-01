@@ -217,9 +217,9 @@ syntactic sugar for `SKK`.
 > What do you feed an Ouroboros? I mean, it's already busy munching on its own
 > tail...
 
-In this instance, the Ouroboros combinator is nourished by SKooby
-snacks—expressions framed by the combination of S and K combinators with S
-applied to K.
+In this instance, the Ouroboros combinator is nourished by `SK`ooby
+snacks—expressions framed by the combination of `S` and `K` combinators with `S`
+applied to `K`.
 
 What does SK imply? It entails taking a function, then an input, and finally
 calling that function with the input but only returning the input itself, not
