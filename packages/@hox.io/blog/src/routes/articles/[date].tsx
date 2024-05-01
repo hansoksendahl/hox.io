@@ -1,15 +1,11 @@
 import { useParams } from '@solidjs/router'
-import { JSX, Show } from 'solid-js'
+import { Show } from 'solid-js'
 import type { Article as ArticleType } from '~/@types/meta'
 import Article from '~/components/article'
 import Page from '~/components/page'
 import meta from '~/meta/data.json'
 
-export interface ArticleProps {
-  children: JSX.Element
-}
-
-const ArticleRoute = (props: ArticleProps) => {
+const ArticleRoute = () => {
   const params = useParams()
   const hasArticle = meta.articles.find(
     (a: ArticleType) => a.date === params.date,
@@ -18,7 +14,7 @@ const ArticleRoute = (props: ArticleProps) => {
   return (
     <Page>
       <Show when={hasArticle}>
-        <Article date={params.date} />
+        <Article />
       </Show>
       <Show when={!hasArticle}>
         <div>Article not found</div>

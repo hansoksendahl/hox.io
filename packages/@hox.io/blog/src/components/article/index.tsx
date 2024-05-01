@@ -1,23 +1,25 @@
-import { createAsync } from '@solidjs/router'
-import { createEffect, createMemo, onCleanup } from 'solid-js'
+import { createAsync, useParams } from '@solidjs/router'
+import { createEffect, createSignal, onCleanup } from 'solid-js'
 import marked from '~/lib/marked'
 import client from '~/lib/trpc/client'
 import getDateParts from '~/utils/get-date-parts'
 import { articleContainer } from './index.module.css'
 
-export interface ArticleProps {
-  date: string
-}
-
-const Article = (props: ArticleProps) => {
+const Article = () => {
   let ref: HTMLDivElement | undefined
 
-  const article = createAsync(async () => {
-    const entry = await client.article.read.query({ date: props.date })
-    const dateParts = createMemo(() => getDateParts(props.date))
-    const prettyDate = `${dateParts().month} ${dateParts().day}, ${dateParts().year}`
+  const params = useParams()
+  const [date, setDate] = createSignal(params.date)
 
-    console.log('prettyDate', prettyDate)
+  createEffect(() => {
+    setDate(params.date)
+  })
+
+  const article = createAsync(async () => {
+    const entry = await client.article.read.query({ date: date() })
+    const { year, month, day } = getDateParts(date())
+    const prettyDate = `${month} ${day}, ${year}`
+
     const markup = await marked.parse(
       `# ${entry.title}\n\n<sub>${prettyDate}</sub>\n\n${entry.content}`,
     )

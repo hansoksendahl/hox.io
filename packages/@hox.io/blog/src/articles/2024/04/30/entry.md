@@ -269,8 +269,8 @@ Pac-Man chomping on an endless stream of glowing dots in shadowy mazes.
 ```typescript
 // The Ouroboros Inner Loop
 // XX λx.λy.y x
-interface Boros<A> {
-  <B extends (_: A) => any>(a: B): Boros<A>
+interface Boros<B> {
+  <A extends (_: B) => C, C extends object>(a: A): Boros<B>
 }
 ```
 
