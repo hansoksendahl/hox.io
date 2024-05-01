@@ -1,5 +1,5 @@
 import { createAsync } from '@solidjs/router'
-import { createEffect, onCleanup } from 'solid-js'
+import { createEffect, createMemo, onCleanup } from 'solid-js'
 import marked from '~/lib/marked'
 import client from '~/lib/trpc/client'
 import getDateParts from '~/utils/get-date-parts'
@@ -14,8 +14,10 @@ const Article = (props: ArticleProps) => {
 
   const article = createAsync(async () => {
     const entry = await client.article.read.query({ date: props.date })
-    const { year, month, day } = getDateParts(props.date)
-    const prettyDate = `${month} ${day}, ${year}`
+    const dateParts = createMemo(() => getDateParts(props.date))
+    const prettyDate = `${dateParts().month} ${dateParts().day}, ${dateParts().year}`
+
+    console.log('prettyDate', prettyDate)
     const markup = await marked.parse(
       `# ${entry.title}\n\n<sub>${prettyDate}</sub>\n\n${entry.content}`,
     )
