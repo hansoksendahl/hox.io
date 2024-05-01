@@ -1,8 +1,7 @@
-# Set up Bun
+# Set up PNPM
 FROM node:latest as dependencies
 WORKDIR /app
 RUN corepack enable
-RUN curl -fsSL https://bun.sh/install | bash
 COPY . . 
 
 # Install app dependencies
@@ -13,8 +12,8 @@ FROM dependencies as builder
 
 # Build app
 WORKDIR /app/packages/@hox.io/blog
-RUN bun run build
+RUN pnpm run build
 
 # Run the server
 EXPOSE 8080
-CMD ["bun", "run", "start"]
+CMD ["pnpm", "run", "start"]
