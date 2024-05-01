@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "dotenvx run -- vinxi dev",
-    "build": "vinxi build",
+    "build": "dotenvx run -- vinxi build",
     "start": "dotenvx run -- vinxi start",
     "version": "vinxi version",
     "generate-meta": "dotenvx run -- bun run ./src/utils/generate-meta.ts"
