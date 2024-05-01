@@ -429,7 +429,7 @@ const createOurorboros = <A extends object>() => {
     return newOb
   }
 
-  return { o: run, set, get, has, remove, clone }
+  return { run: o, set, get, has, remove, clone }
 }
 ```
 
