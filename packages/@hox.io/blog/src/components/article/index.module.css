@@ -53,27 +53,38 @@ hr {
 }
 
 .article-container h1 {
-  font-size: 1.61em;
+  font-size: 1.66em;
   font-weight: 800;
 }
 
 .article-container h2 {
-  font-size: 1.33em;
+  font-size: 1.55em;
   font-weight: 800;
 }
 
 .article-container h3 {
-  font-size: 1.22em;
+  font-size: 1.44em;
   font-weight: 800;
 }
 
-.article-container ul {
+.article-container h4 {
+  font-size: 1.44em;
+  font-weight: 800;
+}
+
+.article-container ul,
+.article-container ol {
   margin-bottom: 1em;
 }
 
 .article-container ul li {
   margin-left: 1.5em;
   list-style-type: circle;
+}
+
+.article-container ol li {
+  margin-left: 1.5em;
+  list-style-type: decimal;
 }
 
 .article-container::after {
