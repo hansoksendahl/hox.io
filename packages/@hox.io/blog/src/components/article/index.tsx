@@ -58,7 +58,7 @@ const Article = (props: ArticleProps) => {
         scrollbar: { alwaysConsumeMouseWheel: false },
         padding: { top: 30, bottom: 30 },
         fixedOverflowWidgets: true,
-        // readOnly: true,
+        readOnly: true,
       })
       const contentHeight = editor.getContentHeight()
 
