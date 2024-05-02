@@ -1,3 +1,5 @@
+![Lazy Day Illustration](https://storage.googleapis.com/hox-io-blog-assets/2024-04-28-wave-core.webp)
+
 I had a nice lazy day today. Of course me being who I am I couldn't help but
 write some code. Sometimes I get something in my head and I can't get it out
 until I build it.

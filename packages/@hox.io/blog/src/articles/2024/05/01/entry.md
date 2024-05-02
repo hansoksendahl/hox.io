@@ -107,6 +107,8 @@ export type Reverse<
 }
 ```
 
+![Utility Types: Logic image](https://storage.googleapis.com/hox-io-blog-assets/2024-05-01-utility-type-logic.webp)
+
 Welcome to the premiere of my blog series on the magic spells of TypeScript,
 specifically diving into the
 [@recon-struct/utility-types](https://recon-struct.github.io) library. Imagine a

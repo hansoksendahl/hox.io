@@ -1,3 +1,5 @@
+![Preparations](https://storage.googleapis.com/hox-io-blog-assets/2024-04-29-coding-nest.webp)
+
 The blog is coming along. I've been doing some more work on my utility type
 library for TypeScript. I've been doing a lot of clean up.
 

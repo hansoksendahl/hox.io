@@ -1,3 +1,5 @@
+![Coding illustration](https://storage.googleapis.com/hox-io-blog-assets/2024-04-27-the-engineer.webp)
+
 I have been focused on client development for so long it's strange to be
 working on a medium in which I actually care about things like Search Engine
 Optimization (SEO).

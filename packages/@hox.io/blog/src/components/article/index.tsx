@@ -1,6 +1,6 @@
 import { createAsync } from '@solidjs/router'
-import { createEffect, onCleanup } from 'solid-js'
-import marked from '~/lib/marked'
+import { marked } from 'marked'
+import { createEffect, createSignal, onCleanup } from 'solid-js'
 import client from '~/lib/trpc/client'
 import getDateParts from '~/utils/get-date-parts'
 import getDeclarationAndMarkup from './get-declaration-and-markup'
@@ -11,76 +11,82 @@ export interface ArticleProps {
 }
 
 const Article = (props: ArticleProps) => {
+  const [articleContent, setArticleContent] = createSignal<string>()
+  const [articleDeclaration, setArticleDeclaration] = createSignal<string>()
   let ref: HTMLDivElement | undefined
 
-  const article = createAsync(async () => {
-    const entry = await client.article.read.query({ date: props.date })
-    const { year, month, day } = getDateParts(props.date)
-    const prettyDate = `${month} ${day}, ${year}`
-    const articleParts = getDeclarationAndMarkup(entry.content)
-    const markup = await marked.parse(
-      `# ${entry.title}\n\n<sub>${prettyDate}</sub>\n\n${articleParts.markup}`,
-    )
+  const articleData = createAsync(
+    async () => await client.article.read.query({ date: props.date }),
+  )
 
-    return {
-      markup,
-      declaration: articleParts.declaration,
+  createEffect(async () => {
+    if (articleData()) {
+      const { declaration, markup } = getDeclarationAndMarkup(
+        articleData()!.content,
+      )
+
+      const { year, month, day } = getDateParts(props.date)
+      const prettyDate = `${month} ${day}, ${year}`
+      const content = await marked(
+        `# ${articleData()!.title}\n<sub>${prettyDate}</sub>\n${markup}`,
+      )
+
+      setArticleContent(content)
+      setArticleDeclaration(declaration)
     }
   })
 
-  createEffect(async prev => {
-    let editors = [] as any[]
-    const monaco = await import('~/lib/monaco')
+  createEffect(() => {
+    if (articleContent() && articleDeclaration()) {
+      let editors = [] as any[]
 
-    console.log('article', article())
+      ref?.querySelectorAll('pre code').forEach(async codeBlock => {
+        const div = document.createElement('div')
+        codeBlock.parentNode?.replaceChild(div, codeBlock)
 
-    if (article()?.declaration) {
-      monaco.default.languages.typescript.typescriptDefaults.addExtraLib(
-        article()?.declaration!,
-        'file:///index.d.ts',
-      )
-    }
+        const language = codeBlock.className.replace(/language-/, '')
+        const monaco = await import('~/lib/monaco')
 
-    ref?.querySelectorAll('pre code').forEach(async codeBlock => {
-      const div = document.createElement('div')
-      codeBlock.parentNode?.replaceChild(div, codeBlock)
+        if (articleDeclaration()) {
+          monaco.default.languages.typescript.typescriptDefaults.addExtraLib(
+            articleDeclaration()!,
+          )
+        }
 
-      const language = codeBlock.className.replace(/language-/, '')
+        const editor = monaco.default.editor.create(div as HTMLElement, {
+          language,
+          value: codeBlock.textContent?.replace(/\n+$/, '') || '',
+          minimap: { enabled: false },
+          scrollBeyondLastLine: false,
+          overviewRulerLanes: 0,
+          theme: 'cobalt2',
+          renderLineHighlight: 'none',
+          scrollbar: { alwaysConsumeMouseWheel: false },
+          padding: { top: 30, bottom: 30 },
+          fixedOverflowWidgets: true,
+          readOnly: true,
+        })
+        const contentHeight = editor.getContentHeight()
 
-      const editor = monaco.default.editor.create(div as HTMLElement, {
-        language,
-        value: codeBlock.textContent?.replace(/\n+$/, '') || '',
-        minimap: { enabled: false },
-        scrollBeyondLastLine: false,
-        overviewRulerLanes: 0,
-        theme: 'cobalt2',
-        renderLineHighlight: 'none',
-        scrollbar: { alwaysConsumeMouseWheel: false },
-        padding: { top: 30, bottom: 30 },
-        fixedOverflowWidgets: true,
-        readOnly: true,
+        div.style.height = `${contentHeight}px`
+        div.style.width = '100%'
+        div.style.margin = '2rem 0'
+        div.style.backgroundColor = 'black'
+        div.style.borderRadius = '1vmin'
+        div.style.overflow = 'hidden'
+        editor.layout()
+
+        editors.push(editor)
       })
-      const contentHeight = editor.getContentHeight()
 
-      div.style.height = `${contentHeight}px`
-      div.style.width = '100%'
-      div.style.margin = '2rem 0'
-      div.style.backgroundColor = 'black'
-      div.style.borderRadius = '1vmin'
-      div.style.overflow = 'hidden'
-      editor.layout()
-
-      editors.push(editor)
-      return prev
-    }, article())
-
-    onCleanup(() => {
-      editors.forEach((editor: { dispose: () => void }) => editor.dispose())
-    })
+      onCleanup(() => {
+        editors.forEach((editor: { dispose: () => void }) => editor.dispose())
+      })
+    }
   })
 
   return (
-    <article class={articleContainer} ref={ref} innerHTML={article()?.markup} />
+    <article class={articleContainer} ref={ref} innerHTML={articleContent()} />
   )
 }
 

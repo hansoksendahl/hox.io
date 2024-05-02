@@ -1,3 +1,5 @@
+![Ourobors illustration](https://storage.googleapis.com/hox-io-blog-assets/2024-04-30-ouroboros.webp)
+
 Ah, let us embark on a wistful sonnet of binary escapades, where the chains of
 our earthly vessels are mere whispers against the screaming winds of the digital
 tempest. Picture yourself as a mischievous byte, darting through the sprawling
