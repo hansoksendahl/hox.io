@@ -47,21 +47,24 @@ hr {
 .article-container h4,
 .article-container h5,
 .article-container h6 {
+  color: rgb(128, 195, 229);
   line-height: calc(1em + 0.5rem);
+  margin-bottom: 0.5rem;
 }
 
 .article-container h1 {
   font-size: 1.61em;
   font-weight: 800;
-  color: rgb(128, 195, 229);
-  margin-bottom: 0.5em;
 }
 
 .article-container h2 {
   font-size: 1.33em;
   font-weight: 800;
-  color: rgb(128, 195, 229);
-  margin-bottom: 0.5em;
+}
+
+.article-container h3 {
+  font-size: 1.22em;
+  font-weight: 800;
 }
 
 .article-container ul {
@@ -78,5 +81,5 @@ hr {
 }
 
 p code {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Sono', monospace;
 }
