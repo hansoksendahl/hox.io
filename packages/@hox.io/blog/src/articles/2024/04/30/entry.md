@@ -492,11 +492,9 @@ We ended up deploying a different solution—one that sprawled across many more
 lines and was far from optimized. But hey, that’s just the way the cookie
 crumbles in this biz sometimes.
 
-This post marks the first in a series I plan to write about TypeScript. I just
-needed to get this nagging problem off my chest, one that I had been wrestling
-with for ages. Wrestling with type systems is no walk in the park, but
-thankfully, there are libraries that throw us a lifeline. In fact, I’ve been
-busy cooking up one of my own.
+This post was a little wild eyed and not my usual kind of content. I am about
+to start a series on TypeScript and using utility types to get better results
+from AI.
 
 I founded a consortium called recon-struct, and we’ve just launched a library
 full of Utility Types for TypeScript. Dive into the documentation
