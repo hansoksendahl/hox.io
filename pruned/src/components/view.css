@@ -1,0 +1,131 @@
+.markdown img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+.markdown > pre > code {
+  display: none;
+  pointer-events: auto;
+}
+
+.markdown a {
+  color: rgb(128, 195, 229);
+}
+
+.markdown strong {
+  font-weight: 800;
+}
+
+hr {
+  margin: 1.5rem 0;
+}
+
+.markdown a:visited {
+  color: rgb(128, 135, 229);
+}
+
+.markdown p {
+  margin-bottom: 2rem;
+  line-height: calc(1em + 0.5rem);
+  color: rgb(80, 80, 80);
+}
+
+.markdown blockquote {
+  position: relative;
+  background-color: rgb(245, 245, 245);
+  border-left: 2px solid rgb(230, 230, 230);
+  padding: 0.5rem 0.5rem 0.01rem 1rem;
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.markdown blockquote:before {
+  content: '💬';
+  position: absolute;
+  left: -1.5rem;
+  top: 0;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  color: rgb(128, 195, 229);
+  line-height: calc(1em + 0.5rem);
+  margin-bottom: 2rem;
+}
+
+.markdown sub {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.markdown > h1:first-child > sub:first-child {
+  margin-bottom: 2rem;
+}
+
+.markdown h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.markdown h2 {
+  font-size: 2.75rem;
+  font-weight: 800;
+}
+
+.markdown h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.markdown h4 {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.markdown ul,
+.markdown ol {
+  margin-bottom: 2rem;
+}
+
+.markdown ul li {
+  line-height: calc(1em + 0.5rem);
+  margin-left: 1.5rem;
+  list-style-type: circle;
+}
+
+.markdown ol li {
+  margin-left: 1.5rem;
+  line-height: calc(1em + 0.5rem);
+  list-style-type: decimal;
+}
+
+.markdown p code {
+  font-family: 'Sono', monospace;
+}
+
+.markdown h1:has(+ hr) {
+  margin-bottom: 0;
+}
+
+.markdown hr {
+  width: 100%;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.markdown button {
+  background-color: rgb(128, 195, 229);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
