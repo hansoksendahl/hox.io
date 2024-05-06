@@ -12,5 +12,8 @@
   "module": "./dist/index.es.js",
   "files": [
     "./dist/*"
-  ]
+  ],
+  "devDependencies": {
+    "vite": "^5.2.11"
+  }
 }
