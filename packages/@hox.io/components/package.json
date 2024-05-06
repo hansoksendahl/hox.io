@@ -8,11 +8,8 @@
   "scripts": {
     "build": "vite build"
   },
-  "main": "./dist/index.umd.js",
-  "module": "./dist/index.es.js",
-  "files": [
-    "./dist/*"
-  ],
+  "main": "./src/index.js",
+  "module": "./src/index.js",
   "devDependencies": {
     "vite": "^5.2.11"
   }
