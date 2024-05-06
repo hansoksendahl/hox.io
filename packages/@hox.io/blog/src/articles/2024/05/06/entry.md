@@ -198,23 +198,23 @@ intricate type system tasks.
 Consider the following example:
 
 ```typescript
-type Blah = {
+type Animals = {
   dog: 'woof'
   cat: 'meow'
   cow: 'moo'
 }
 
 type Sounds = {
-  [A in keyof Blah as `the${Capitalize<A>}`]: {
-    says: Blah[A]
+  [A in keyof Animals as `the${Capitalize<A>}`]: {
+    says: Animals[A]
   }
 }
 ```
 
 In this code, Sounds is a mapped type that dynamically constructs new properties
-based on the keys from the Blah type. Each property is prefixed with 'the' and
-includes the sound associated with each animal, illustrating the power of mapped
-types to transform and extend existing type definitions.
+based on the keys from the `Animals` type. Each property is prefixed with 'the'
+and includes the sound associated with each animal, illustrating the power of
+mapped types to transform and extend existing type definitions.
 
 ### Literals, Tuples, Objects
 
