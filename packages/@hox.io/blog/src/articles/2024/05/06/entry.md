@@ -72,6 +72,8 @@ export type IsLiteralVoid<A> = IsEqual<A, void>
 }
 ```
 
+![Illustration of a laptop at night](https://storage.googleapis.com/hox-io-blog-assets/2024-05-06-literals.webp)
+
 Welcome to our second installment of articles covering the TypeScript utility
 type library [@recon-struct/utility-types](https://recon-struct.github.io). Last
 time we talked about [Logic](https://blog.hox.io/articles/2024-05-01)
