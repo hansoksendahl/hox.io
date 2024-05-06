@@ -1,6 +1,6 @@
 import { createAsync } from '@solidjs/router'
-import { marked } from 'marked'
 import { createEffect, createSignal, onCleanup } from 'solid-js'
+import marked from '~/lib/marked'
 import client from '~/lib/trpc/client'
 import getDateParts from '~/utils/get-date-parts'
 import getDeclarationAndMarkup from './get-declaration-and-markup'
