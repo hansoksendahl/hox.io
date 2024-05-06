@@ -1,19 +1,16 @@
-import React, {useContext} from 'react';
-import { Main, Aside } from '../../../../card';
-import Node from '../../node';
-import ZoomNode from '../../zoomNode';
-import {zuiContext} from '../../store';
-import {Column, Row, Text, Icon} from '@hox.io/components';
-import Markdown from '../../../../markdown';
-import { exportDB } from 'dexie-export-import';
+import { Column, Icon, Row } from '@hox.io/components'
+import { exportDB } from 'dexie-export-import'
+import { useContext } from 'react'
+import { Aside, Main } from '../../../../card'
+import Markdown from '../../../../markdown'
+import Node from '../../node'
+import { zuiContext } from '../../store'
+import ZoomNode from '../../zoomNode'
 
 export default function View() {
-  const {
-    state,
-    fire
-  } = useContext(zuiContext);
+  const { state, fire } = useContext(zuiContext)
 
-  const {datum, zoomProps, datumProps, isAnimating} = state;
+  const { datum, zoomProps, datumProps, isAnimating } = state
 
   const dumpDb = async () => {
     const blob = await exportDB(state.db)
@@ -26,7 +23,7 @@ export default function View() {
     document.body.removeChild(link)
   }
 
-  if (!datum) return null;
+  if (!datum) return null
 
   return (
     <>
@@ -38,41 +35,35 @@ export default function View() {
             isRoot={true}
             isInteractive={true}
           />
-          {isAnimating && (
-            <ZoomNode
-              {...zoomProps}
-            />
-          )}
+          {isAnimating && <ZoomNode {...zoomProps} />}
         </svg>
       </Main>
       <Aside>
         <Column
           style={{
-            justifyContent: "space-between",
-            height: '100%'
+            justifyContent: 'space-between',
+            height: '100%',
           }}
         >
           <Column>
-            <Text>
-              <Markdown content={datum.content} />
-            </Text>
+            <Markdown content={datum.content} />
           </Column>
-          {(process.env.NODE_ENV === 'development') && (
+          {process.env.NODE_ENV === 'development' && (
             <Row
               style={{
                 height: '1rem',
-                justifyContent: 'flex-end'
+                justifyContent: 'flex-end',
               }}
             >
               <Icon
-                name="edit"
+                name='edit'
                 width='1rem'
                 height='1rem'
-                color="orange"
+                color='orange'
                 onClick={() => fire('setMode', 'update')}
               />
               <Icon
-                name="edit"
+                name='edit'
                 width='1rem'
                 height='1rem'
                 color='orange'
@@ -83,5 +74,5 @@ export default function View() {
         </Column>
       </Aside>
     </>
-  );
+  )
 }
