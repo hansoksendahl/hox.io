@@ -77,9 +77,13 @@ export type IsLiteralVoid<A> = IsEqual<A, void>
 Welcome to our second installment of articles covering the TypeScript utility
 type library [@recon-struct/utility-types](https://recon-struct.github.io). Last
 time we talked about [Logic](https://blog.hox.io/articles/2024-05-01)
-specifically antecedents (conditional types that return `true` or `false`).
+specifically **antecedents** (conditional types that return `true` or `false`).
 Using these types we can make complex statements by composing true or false
-statements together with boolean operators like And, Or, Xor, Not.
+statements together with antecedents like
+[And](https://blog.hox.io/articles/2024-05-01#and),
+[Or](https://blog.hox.io/articles/2024-05-01#or),
+[Xor](https://blog.hox.io/articles/2024-05-01#xor), and
+[Not](https://blog.hox.io/articles/2024-05-01#not).
 
 This article will continue to expand on that theme. This time however we will
 be talking about literal types... literally. So stay tuned as we continue to
