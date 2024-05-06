@@ -69,6 +69,10 @@ hr {
   font-size: 1.5rem;
 }
 
+.article-container h1 + p > sub {
+  display: block;
+}
+
 .article-container > h1:first-child > sub:first-child {
   margin-bottom: 2rem;
 }

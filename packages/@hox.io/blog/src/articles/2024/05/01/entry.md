@@ -119,7 +119,7 @@ equations and Boolean logic.
 This kick-off post zooms in on the Logic module of
 [@recon-struct/utility-types](https://recon-struct.github.io).
 
-## ⚖️ Conditional Types
+## Conditional Types
 
 Unleashed in [TypeScript
 2.8](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html),

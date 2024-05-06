@@ -1,6 +1,10 @@
 {
   "articles": [
     {
+      "title": "Utility-Types: Literal",
+      "date": "2024-05-06"
+    },
+    {
       "title": "Utility-Types: Logic",
       "date": "2024-05-01"
     },
@@ -27,8 +31,20 @@
   ],
   "tagCounts": [
     [
+      "TypeScript",
+      2
+    ],
+    [
+      "Utility-Types",
+      2
+    ],
+    [
       "test",
       2
+    ],
+    [
+      "Logic",
+      1
     ],
     [
       "typeScript",
