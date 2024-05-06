@@ -11,8 +11,8 @@ RUN pnpm install
 FROM dependencies as builder
 
 # Build local dependencies
-WORKDIR /app/packages/@hox.io/components
-RUN pnpm run build
+# WORKDIR /app/packages/@hox.io/components
+# RUN pnpm run build
 
 # Build app
 WORKDIR /app/packages/@hox.io/app
