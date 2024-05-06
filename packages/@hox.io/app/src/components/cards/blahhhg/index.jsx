@@ -8,8 +8,8 @@ const BlahhhgCard = () => (
     <Main>
       <Spacing padding={1}>
         <img
-          src='/bacon.webp'
-          alt='The chunkiest bacon'
+          src='/blog.webp'
+          alt='The blahhhg logo'
           style={{ width: '100%' }}
         />
       </Spacing>
