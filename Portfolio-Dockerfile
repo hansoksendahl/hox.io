@@ -10,20 +10,6 @@ RUN pnpm install
 # Build production image
 FROM dependencies as builder
 
-# Build local dependencies
-WORKDIR /app/packages/@hox.io/components
-RUN pnpm run build
-WORKDIR /app/packages/@hox.io/hooks
-RUN pnpm run build
-WORKDIR /app/packages/@hox.io/react-form
-RUN pnpm run build
-WORKDIR /app/packages/@hox.io/react-store
-RUN pnpm run build
-WORKDIR /app/packages/@hox.io/use-dexie
-RUN pnpm run build
-WORKDIR /app/packages/@hox.io/use-lottie
-RUN pnpm run build
-
 # Build app
 WORKDIR /app/packages/@hox.io/app
 RUN pnpm run build
