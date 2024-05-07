@@ -111,7 +111,7 @@ enter through by the use of the `any` keyword. Any means just that anything. It
 offers know type safety at all. A variable once assigned a value of any
 compromises every type safe function or class method it touches. It can be used
 as a catchers mit on occasion but should be used very cautiously if at all. In
-fact many authors choose to set the TypeScript compilerOption noImplicitAny
+fact many authors choose to set the TypeScript compilerOption `noImplicitAny`
 just to stop `any` from sneaking into their type safe code base.
 
 ```typescript
