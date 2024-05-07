@@ -232,13 +232,15 @@ Literals allow us to perform definitive and accurate programming, which we will
 explore in more depth shortly.
 
 ```typescript
+const MY_SYMBOL = Symbol("And isn't it symbolic?")
+
 type Ex1 = 'Hello World!'
 type Ex2 = 1337
 type Ex3 = 123n
 type Ex4 = true
 type Ex5 = null
 type Ex6 = undefined
-type Ex7 = typeof Symbol("And isn't it symbolic?")
+type Ex7 = typeof MY_SYMBOL
 ```
 
 These examples highlight how literals can be used to ensure that values conform
@@ -294,9 +296,11 @@ key, typically used to index properties or elements.
 ```typescript
 import { IsLiteralKey } from '@recon-struct/utility-types'
 
+type MY_SYMBOL = Symbol()
+
 type Ex1 = IsLiteralKey<'id'> // true
 type Ex2 = IsLiteralKey<2> // true
-type Ex3 = IsLiteralKey<typeof Symbol('symbolic-key')> // true
+type Ex3 = IsLiteralKey<typeof MY_SYMBOL> // true
 type Ex4 = IsLiteralKey<string> // false
 type Ex5 = IsLiteralKey<number> // false
 type Ex6 = IsLiteralKey<symbol> // false
