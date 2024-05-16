@@ -9,17 +9,17 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@recon-struct/utility-types": "^1.0.4",
-    "typescript": "^5.3.3",
-    "vite": "^5.1.1",
-    "vite-plugin-dts": "^3.7.2"
+    "@recon-struct/utility-types": "^1.2.15",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vite-plugin-dts": "^3.9.1"
   },
   "peerDependencies": {
     "solid-js": "^1.7.8"
   },
   "dependencies": {
-    "@types/node": "^20.11.17",
-    "vite-plugin-solid": "^2.9.1"
+    "@types/node": "^20.12.11",
+    "vite-plugin-solid": "^2.10.2"
   },
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",

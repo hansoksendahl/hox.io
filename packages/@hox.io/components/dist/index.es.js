@@ -1538,173 +1538,8 @@ function Kr({
     }
   );
 }
-function Gr({
-  style: l,
-  ...i
-}) {
-  return /* @__PURE__ */ j.createElement(
-    $t,
-    {
-      ...i,
-      direction: "row",
-      style: {
-        width: "100%",
-        ...l
-      }
-    }
-  );
-}
-function ze(l) {
-  return ({ target: { value: i } }) => l(i);
-}
-const Dt = Math.sqrt(5), Qr = (Dt - 1) / 2, Br = (Dt + 1) / 2;
-function Ye(l, i) {
-  const g = Br ** l;
-  return i ? `${g}${i}` : g;
-}
-function At(l, i) {
-  return Array.isArray(l) ? l.map((g) => g > 0 ? Ye(g, i) : 0).join(" ") : Ye(l, i);
-}
-const jt = "rem";
-function Xr({
-  children: l,
-  margin: i,
-  padding: g,
-  style: T,
-  ...x
-}) {
-  return /* @__PURE__ */ j.createElement(
-    "div",
-    {
-      style: {
-        margin: i && At(i, jt),
-        padding: g && At(g, jt),
-        ...T
-      },
-      ...x
-    },
-    l
-  );
-}
-const Hr = "rgb(80,80,80)";
-function It({
-  style: l,
-  children: i,
-  size: g = 0,
-  ...T
-}) {
-  return /* @__PURE__ */ j.createElement(
-    "span",
-    {
-      style: {
-        fontFamily: "Helvetica, Arial, sans-serif",
-        fontSize: `${Ye(g)}rem`,
-        lineHeight: "1.3em",
-        color: Hr,
-        ...l
-      },
-      ...T
-    },
-    i
-  );
-}
-function Jr({
-  children: l,
-  style: i,
-  ...g
-}) {
-  return Array.isArray(l) ? l.map((T, x) => /* @__PURE__ */ j.createElement(
-    It,
-    {
-      key: x,
-      style: {
-        display: "inline-block",
-        marginBottom: "1rem",
-        ...i
-      }
-    },
-    T
-  )) : /* @__PURE__ */ j.createElement(It, { style: i, ...g }, l);
-}
-function Zr({
-  style: l,
-  onChange: i,
-  ...g
-}) {
-  return /* @__PURE__ */ j.createElement(
-    "textarea",
-    {
-      onChange: i && ze(i),
-      style: {
-        outline: "none",
-        display: "block",
-        height: "100%",
-        width: "100%",
-        resize: "none",
-        ...l
-      },
-      ...g
-    }
-  );
-}
-function qr({
-  children: l,
-  ...i
-}) {
-  return /* @__PURE__ */ j.createElement(
-    "option",
-    {
-      ...i
-    },
-    l
-  );
-}
-function en({
-  options: l,
-  style: i,
-  onChange: g,
-  ...T
-}) {
-  return /* @__PURE__ */ j.createElement(
-    "select",
-    {
-      onChange: g && ze(g),
-      style: {
-        outline: "none",
-        ...i
-      },
-      ...T
-    },
-    l && l.map(({ label: x, value: V }, z) => /* @__PURE__ */ j.createElement(
-      qr,
-      {
-        key: z,
-        value: V
-      },
-      x
-    ))
-  );
-}
-function tn({
-  style: l,
-  onChange: i,
-  ...g
-}) {
-  return /* @__PURE__ */ j.createElement(
-    "input",
-    {
-      type: "text",
-      onChange: i && ze(i),
-      style: {
-        outline: "none",
-        display: "block",
-        ...l
-      },
-      ...g
-    }
-  );
-}
-function rn({
+const Dt = Math.sqrt(5), Gr = (Dt - 1) / 2, Br = (Dt + 1) / 2;
+function Qr({
   name: l,
   style: i,
   transform: g,
@@ -1730,16 +1565,181 @@ function rn({
     )
   )));
 }
+function ze(l) {
+  return ({ target: { value: i } }) => l(i);
+}
+function Xr({
+  style: l,
+  onChange: i,
+  ...g
+}) {
+  return /* @__PURE__ */ j.createElement(
+    "textarea",
+    {
+      onChange: i && ze(i),
+      style: {
+        outline: "none",
+        display: "block",
+        height: "100%",
+        width: "100%",
+        resize: "none",
+        ...l
+      },
+      ...g
+    }
+  );
+}
+function Hr({
+  children: l,
+  ...i
+}) {
+  return /* @__PURE__ */ j.createElement(
+    "option",
+    {
+      ...i
+    },
+    l
+  );
+}
+function Jr({
+  options: l,
+  style: i,
+  onChange: g,
+  ...T
+}) {
+  return /* @__PURE__ */ j.createElement(
+    "select",
+    {
+      onChange: g && ze(g),
+      style: {
+        outline: "none",
+        ...i
+      },
+      ...T
+    },
+    l && l.map(({ label: x, value: V }, z) => /* @__PURE__ */ j.createElement(
+      Hr,
+      {
+        key: z,
+        value: V
+      },
+      x
+    ))
+  );
+}
+function Zr({
+  style: l,
+  onChange: i,
+  ...g
+}) {
+  return /* @__PURE__ */ j.createElement(
+    "input",
+    {
+      type: "text",
+      onChange: i && ze(i),
+      style: {
+        outline: "none",
+        display: "block",
+        ...l
+      },
+      ...g
+    }
+  );
+}
+function en({
+  style: l,
+  ...i
+}) {
+  return /* @__PURE__ */ j.createElement(
+    $t,
+    {
+      ...i,
+      direction: "row",
+      style: {
+        width: "100%",
+        ...l
+      }
+    }
+  );
+}
+function Ye(l, i) {
+  const g = Br ** l;
+  return i ? `${g}${i}` : g;
+}
+function At(l, i) {
+  return Array.isArray(l) ? l.map((g) => g > 0 ? Ye(g, i) : 0).join(" ") : Ye(l, i);
+}
+const jt = "rem";
+function tn({
+  children: l,
+  margin: i,
+  padding: g,
+  style: T,
+  ...x
+}) {
+  return /* @__PURE__ */ j.createElement(
+    "div",
+    {
+      style: {
+        margin: i && At(i, jt),
+        padding: g && At(g, jt),
+        ...T
+      },
+      ...x
+    },
+    l
+  );
+}
+const qr = "rgb(80,80,80)";
+function It({
+  style: l,
+  children: i,
+  size: g = 0,
+  ...T
+}) {
+  return /* @__PURE__ */ j.createElement(
+    "span",
+    {
+      style: {
+        fontFamily: "Helvetica, Arial, sans-serif",
+        fontSize: `${Ye(g)}rem`,
+        lineHeight: "1.3em",
+        color: qr,
+        ...l
+      },
+      ...T
+    },
+    i
+  );
+}
+function rn({
+  children: l,
+  style: i,
+  ...g
+}) {
+  return Array.isArray(l) ? l.map((T, x) => /* @__PURE__ */ j.createElement(
+    It,
+    {
+      key: x,
+      style: {
+        display: "inline-block",
+        marginBottom: "1rem",
+        ...i
+      }
+    },
+    T
+  )) : /* @__PURE__ */ j.createElement(It, { style: i, ...g }, l);
+}
 export {
   Kr as Column,
   $t as Flex,
-  rn as Icon,
-  Zr as InputBlob,
-  en as InputSelect,
-  tn as InputText,
+  Qr as Icon,
+  Xr as InputBlob,
+  Jr as InputSelect,
+  Zr as InputText,
   Br as Phi,
-  Gr as Row,
-  Xr as Spacing,
-  Jr as Text,
-  Qr as phi
+  en as Row,
+  tn as Spacing,
+  rn as Text,
+  Gr as phi
 };

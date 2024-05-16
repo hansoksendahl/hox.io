@@ -142,6 +142,14 @@ of your type system. It avoids interacting with other established types,
 remaining an enigmatic presence, spoken of in hushed tones by the rest of the
 types.
 
+```ts
+const enigma: unknown = 'mystery'
+
+const ex1: unknown = enigma // This is fine...
+const ex2: any = enigma // This is fine...
+const ex3: string = enigma // Produces an error!
+```
+
 ### Object Keyword
 
 It's important not to confuse object types with the `object` keyword. In
@@ -155,6 +163,12 @@ that something is a structured data type—especially when everything else is a
 primitive—can be helpful, in practice, the utility of the `object` keyword is
 limited. This observation comes from the author's personal experience in the
 field.
+
+```typescript
+const ex1: object = { '🙂': '🙂' }
+const ex2: object = ['😅']
+const ex3: object = () => '😓'
+```
 
 ### Generic Classes, Records, and Arrays
 
@@ -175,7 +189,7 @@ Examples:
 ```typescript
 type Ex1 = Map<string, number>
 type Ex2 = Record<string, string>
-type Ex3 = string[] // Also the less used `Array<string>`
+type Ex3 = string[] // Also the synonymous, less used `Array<string>`
 ```
 
 ### Primitive Types
@@ -234,6 +248,7 @@ explore in more depth shortly.
 ```typescript
 const MY_SYMBOL = Symbol("And isn't it symbolic?")
 
+// Literals
 type Ex1 = 'Hello World!'
 type Ex2 = 1337
 type Ex3 = 123n
@@ -241,11 +256,17 @@ type Ex4 = true
 type Ex5 = null
 type Ex6 = undefined
 type Ex7 = typeof MY_SYMBOL
+
+// Structured data with literal values
+type Ex8 = [1, 2, 3] // tuple
+type Ex9 = { x: 1; y: 2; z: 3 } // object
 ```
 
 These examples highlight how literals can be used to ensure that values conform
 strictly to specified types, providing a robust framework for precise and safe
-type-checking in your applications.
+type-checking in your applications. Similarly tuple and object types can
+represent structured data in which all of the _leaves_ are literals making for
+unambiguous structured data.
 
 ## Literal Antecedents
 

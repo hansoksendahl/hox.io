@@ -1,4 +1,4 @@
 {
 "title": "🛠️ ",
-"tags": ["TypeScript", "Utility-Types", "Logic"]
+"tags": ["TypeScript", "Utility-Types"]
 }
