@@ -142,7 +142,7 @@ of your type system. It avoids interacting with other established types,
 remaining an enigmatic presence, spoken of in hushed tones by the rest of the
 types.
 
-```ts
+```typescript
 const enigma: unknown = 'mystery'
 
 const ex1: unknown = enigma // This is fine...
