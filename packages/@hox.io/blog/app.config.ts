@@ -8,11 +8,7 @@ export default defineConfig({
       },
     },
     ssr: {
-      noExternal: [
-        '@kobalte/core',
-        '@hox.io/create-t',
-        '@internationalized/message',
-      ],
+      noExternal: ['@kobalte/core', '@internationalized/message'],
     },
   },
 })

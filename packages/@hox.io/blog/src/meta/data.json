@@ -1,11 +1,15 @@
 {
   "articles": [
     {
-      "title": "Utility-Types: Literal",
+      "title": "📣 strix",
+      "date": "2024-05-20"
+    },
+    {
+      "title": "🛠️ Utility-Types: Literal",
       "date": "2024-05-06"
     },
     {
-      "title": "Utility-Types: Logic",
+      "title": "🛠️ Utility-Types: Logic",
       "date": "2024-05-01"
     },
     {
@@ -32,7 +36,7 @@
   "tagCounts": [
     [
       "TypeScript",
-      2
+      3
     ],
     [
       "Utility-Types",
@@ -41,6 +45,10 @@
     [
       "test",
       2
+    ],
+    [
+      "AI",
+      1
     ],
     [
       "Logic",

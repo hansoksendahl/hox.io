@@ -6,10 +6,11 @@
     "packages/@hox.io/*"
   ],
   "scripts": {
-    "create-env": "printenv > ./packages/@hox.io/blog/.env",
-    "start": "pnpm run -C ./packages/@hox.io/app start",
-    "start-blog": "pnpm run -C ./packages/@hox.io/blog start",
-    "start-portfolio": "pnpm run -C ./packages/@hox.io/app start"
+    "create-article": "scripts/create-article.sh",
+    "create-env": "scripts/create-env.sh",
+    "start-blog": "scripts/start-blog.sh",
+    "start-portfolio": "scripts/start-portfolio.sh",
+    "w": "scripts/w.sh"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
