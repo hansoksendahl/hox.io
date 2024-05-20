@@ -75,6 +75,8 @@ export default strix
 }
 ```
 
+![Introducing strix](https://storage.googleapis.com/hox-io-blog-assets/2024-05-20-yeah-buddy.webp)
+
 I have been doing some work on a new project and I needed a way to interpolate
 strings with objects. I wanted to use a syntax similar to
 [Handlebars](https://handlebarsjs.com/), but I wanted to be able to use any
