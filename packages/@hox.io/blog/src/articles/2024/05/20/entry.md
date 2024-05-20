@@ -129,20 +129,19 @@ const userStrings = {
   error: {
     duplicateEmail: 'The email {{email}} is already in use.',
   },
-}
+} as const
 
-const sx = strix(userStrings as const)
+const sx = strix(userStrings)
 
 const error = sx('error.duplicateEmail', {
   email: 'hansoksendahl@gmail.com',
 } as const)
+
+console.log(error)
 ```
 
-In the code block above, the `error` variable will be `The email
-hansoksendahl@gmail.com is already in use.`. This is because the `strix`
-function supports nested objects.
-
-Using object nesting you can brake your string templates across multiple files.
+Using object nesting you can brake your string templates across multiple files
+easily. This is a good way of organizing your strings in a large application.
 
 ## Conclusion
 
