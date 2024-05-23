@@ -72,7 +72,7 @@ const Article = (props: ArticleProps) => {
         div.style.width = '100%'
         div.style.margin = '2rem 0'
         div.style.backgroundColor = 'black'
-        div.style.borderRadius = '1vmin'
+        div.style.borderRadius = '15px'
         div.style.overflow = 'hidden'
         editor.layout()
 

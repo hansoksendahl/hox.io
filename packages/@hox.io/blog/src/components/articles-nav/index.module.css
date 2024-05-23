@@ -7,12 +7,20 @@
 }
 
 .date-row {
-  display: table-row;
+  display: flex;
 }
 
 .date-container {
-  display: table-cell;
+  display: flex;
   width: 3rem;
   text-align: right;
   padding-right: 0.5rem;
+  justify-content: flex-end;
+}
+
+.article-title {
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }

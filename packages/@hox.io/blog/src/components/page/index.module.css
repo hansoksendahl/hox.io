@@ -9,8 +9,8 @@
   display: flex;
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.33) 0px 3px 5px 0px;
-  border-bottom-right-radius: 1vmin;
-  border-bottom-left-radius: 1vmin;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
   margin-bottom: 2vmin;
   padding: 2vmin;
   height: 8vmin;
@@ -27,11 +27,11 @@
 
 .left-nav {
   background-color: #ffffff;
-  border-bottom-right-radius: 1vmin;
-  border-top-right-radius: 1vmin;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.33) 0px 3px 5px 0px;
   height: 100%;
-  padding: 2vmin;
+  padding: 10px 30px 10px 10px;
   position: fixed;
   width: 350px;
   left: 0;
@@ -60,7 +60,7 @@
 
 .content {
   background-color: #ffffff;
-  border-radius: 1vmin;
+  border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.33) 0px 3px 5px 0px;
   padding: 2vmin;
   width: 50vw;

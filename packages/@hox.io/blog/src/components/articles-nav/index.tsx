@@ -4,6 +4,7 @@ import getDateParts from '~/utils/get-date-parts'
 import Details from '../details'
 import Link from '../link'
 import {
+  articleTitle,
   articlesNav,
   dateContainer,
   dateList,
@@ -53,7 +54,10 @@ const ArticlesNav = (props: ArticlesNavProps) => {
                         items={Array.from(month[1]).map(day => (
                           <p class={dateRow}>
                             <span class={dateContainer}>{day[0]}: </span>
-                            <Link href={`/articles/${day[1].date}`}>
+                            <Link
+                              class={articleTitle}
+                              href={`/articles/${day[1].date}`}
+                            >
                               {day[1].title}
                             </Link>
                           </p>
