@@ -48,7 +48,8 @@ const createPartials = (n: number) =>
 
 I used the function above to help generate the [types for these unit
 tests](https://github.com/recon-struct/utility-types/blob/main/src/function/part-app/part-app-8.spec.ts#L394)
-in the [utility-type library](https://github.com/recon-struct/utility-types) I am working on.
+in the [utility-type library](https://github.com/recon-struct/utility-types) I
+am working on.
 
 You can see the hacky code I used to generate the code
 [here](https://github.com/recon-struct/utils/blob/main/src/examples/arity/gen-partials.ts).
