@@ -1,7 +1,11 @@
 {
   "articles": [
     {
-      "title": "📣 strix",
+      "title": "🏆 Function Programming FTW",
+      "date": "2024-05-22"
+    },
+    {
+      "title": "📣 Strix",
       "date": "2024-05-20"
     },
     {
@@ -36,7 +40,7 @@
   "tagCounts": [
     [
       "TypeScript",
-      3
+      4
     ],
     [
       "Utility-Types",
@@ -45,6 +49,10 @@
     [
       "test",
       2
+    ],
+    [
+      "Functional Programming",
+      1
     ],
     [
       "AI",
