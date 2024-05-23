@@ -37,10 +37,11 @@ const Article = (props: ArticleProps) => {
   })
 
   createEffect(() => {
-    if (articleContent() && articleDeclaration()) {
+    if (articleContent() || articleDeclaration()) {
       let editors = [] as any[]
 
       ref?.querySelectorAll('pre code').forEach(async codeBlock => {
+        console.log('hi')
         const div = document.createElement('div')
         codeBlock.parentNode?.replaceChild(div, codeBlock)
 
