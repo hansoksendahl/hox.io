@@ -51,7 +51,7 @@ tests](https://github.com/recon-struct/utility-types/blob/main/src/function/part
 in the [utility-type library](https://github.com/recon-struct/utility-types) I
 am working on.
 
-You can see the hacky code I used to generate the code
+You can see the hacky functional code I used to generate the types
 [here](https://github.com/recon-struct/utils/blob/main/src/examples/arity/gen-partials.ts).
 
 Oooh... birds are chirping 🐦 guess it's time to go to bed! 😅
