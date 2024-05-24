@@ -1,6 +1,10 @@
 {
   "articles": [
     {
+      "title": "🛠️ ReeCSS",
+      "date": "2024-05-24"
+    },
+    {
       "title": "🏆 Functional Programming FTW",
       "date": "2024-05-22"
     },
@@ -40,7 +44,7 @@
   "tagCounts": [
     [
       "TypeScript",
-      4
+      5
     ],
     [
       "Utility-Types",
@@ -49,6 +53,10 @@
     [
       "test",
       2
+    ],
+    [
+      "CSS",
+      1
     ],
     [
       "Functional Programming",
