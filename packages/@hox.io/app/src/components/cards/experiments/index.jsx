@@ -1,7 +1,6 @@
-import React from 'react';
-import Card from '../../card';
-import {Column, Row, Spacing} from '@hox.io/components';
-import Markdown from '../../markdown';
+import { Column, Row, Spacing } from '@hox.io/components'
+import Card from '../../card'
+import Markdown from '../../markdown'
 
 function Experiments() {
   return (
@@ -9,7 +8,8 @@ function Experiments() {
       <Row>
         <Column>
           <Spacing padding={1}>
-            <Markdown content={`
+            <Markdown
+              content={`
 # Design
 
 ---
@@ -23,17 +23,19 @@ function Experiments() {
 [Sad Taco](https://hansoksendahl.github.io/sadtaco/) - 2014  
 > They lost all their delicious fillings, please help!  
 > Built with [d3](https://d3js.org/).
-            `} />
+            `}
+            />
           </Spacing>
         </Column>
         <Column>
           <Spacing padding={1}>
-            <Markdown content={`
+            <Markdown
+              content={`
 # Contact Information
 
 ---
 
-✉️ <a href="mailto:hansoksendahl@gmail.com">hansoksendahl@gmail.com</a>  
+✉️ <a href="mailto:hans@oksendahl.com">hans@oksendahl.com</a>  
 
 <br /><br />
 
@@ -52,7 +54,8 @@ function Experiments() {
 - [Github](https://github.com/hansoksendahl)
 - [LinkedIn](https://www.linkedin.com/in/hansoksendahl/)
 
-            `} />
+            `}
+            />
           </Spacing>
         </Column>
       </Row>
@@ -65,5 +68,5 @@ export default function CardExperiments() {
     <Card y={2}>
       <Experiments />
     </Card>
-  );
+  )
 }

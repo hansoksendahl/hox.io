@@ -24,7 +24,7 @@ const MeCard = () => (
 
 Hans Oksendahl
 
-✉️ <a href="mailto:hansoksendahl@gmail.com">hansoksendahl@gmail.com</a>  
+✉️ <a href="mailto:hans@oksendahl.com">hans@oksendahl.com</a>  
 
 # Social Profiles
 

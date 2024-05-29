@@ -134,7 +134,7 @@ const userStrings = {
 const sx = strix(userStrings)
 
 const error = sx('error.duplicateEmail', {
-  email: 'hansoksendahl@gmail.com',
+  email: 'hans@oksendahl.com',
 } as const)
 
 console.log(error)
