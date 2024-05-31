@@ -1638,8 +1638,8 @@ Negate the value `A`.
 ```typescript
 import { Negate } from '@recon-struct/utility-types'
 
-type Ex1 = Increment<-1> // 1
-type Ex2 = Increment<1> // -1
+type Ex1 = Negate<-1> // 1
+type Ex2 = Negate<1> // -1
 ```
 
 ### Power
