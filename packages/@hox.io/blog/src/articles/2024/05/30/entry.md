@@ -1398,10 +1398,10 @@ kind of crazy.
 ## The Old Days
 
 So, picture this: a couple of weeks ago, I stumbled upon this mind-blowing
-library called ts-calc. It was like discovering a hidden cheat code in the game
-of TypeScript. Their approach to math in the TypeScript compiler? Utterly
-superior. It made the other methods look like a caveman trying to light a fire
-with two sticks.
+library called [ts-calc](https://github.com/ecyrbe/ts-calc). It was like
+discovering a hidden cheat code in the game of TypeScript. Their approach to
+math in the TypeScript compiler? Utterly superior. It made the other methods
+look like a caveman trying to light a fire with two sticks.
 
 But hold on. There was a dark side. A glaring void. The absence of unit tests.
 Like finding a shiny new car without airbags, I was both excited and horrified.
@@ -1668,7 +1668,10 @@ type Ex3 = Subtract<1, 2> // -1
 
 ## Conclusion
 
-As you can see we've got some powerful tools for doing wath in TypeScript.
+As you can see we've got some powerful tools for doing math in TypeScript. All
+part of the
+[@recon-struct/utility-types](https://github.com/recon-struct/utility-types)
+library.
 
 So, there you have it. My journey through the wild world of TypeScript math,
 where I've embraced the chaos, wrangled the code, and, most importantly,
