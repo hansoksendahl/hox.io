@@ -1,6 +1,10 @@
 {
   "articles": [
     {
+      "title": "🛠️ Utility-Types: Math",
+      "date": "2024-05-30"
+    },
+    {
       "title": "🛠️ ReeCSS",
       "date": "2024-05-24"
     },
@@ -44,11 +48,11 @@
   "tagCounts": [
     [
       "TypeScript",
-      5
+      6
     ],
     [
       "Utility-Types",
-      2
+      3
     ],
     [
       "test",
