@@ -1388,24 +1388,42 @@ export type Power<A extends number | bigint, B extends number | bigint> = ToNumb
 }
 ```
 
-Ever found yourself obsessing over unit tests? No? Well, welcome to my world, where I dive into unit tests like a sun-deprived hermit hitting the beach after a grim winter. I crave full coverage like a vampire craves blood. Yes, I'm that kind of crazy.
+Ever found yourself obsessing over unit tests? No? Well, welcome to my world,
+where I dive into unit tests like a sun-deprived hermit hitting the beach after
+a grim winter. I crave full coverage like a vampire craves blood. Yes, I'm that
+kind of crazy.
 
 ## The Old Days
 
-So, picture this: a couple of weeks ago, I stumbled upon this mind-blowing library called ts-calc. It was like discovering a hidden cheat code in the game of TypeScript. Their approach to math in the TypeScript compiler? Utterly superior. It made the other methods look like a caveman trying to light a fire with two sticks.
+So, picture this: a couple of weeks ago, I stumbled upon this mind-blowing
+library called ts-calc. It was like discovering a hidden cheat code in the game
+of TypeScript. Their approach to math in the TypeScript compiler? Utterly
+superior. It made the other methods look like a caveman trying to light a fire
+with two sticks.
 
-But hold on. There was a dark side. A glaring void. The absence of unit tests. Like finding a shiny new car without airbags, I was both excited and horrified. Naturally, I had to dig in, kick the tires, and slap some of my own tests onto ts-calc's types.
+But hold on. There was a dark side. A glaring void. The absence of unit tests.
+Like finding a shiny new car without airbags, I was both excited and horrified.
+Naturally, I had to dig in, kick the tires, and slap some of my own tests onto
+ts-calc's types.
 
-Flashback to the "olden days"—circa 2020. Picture it: a couple of crafty TypeScript programmers figured out you could perform basic math by converting numbers into tuples. Tuples, with their blessed lengths known to TypeScript, became the secret sauce for integer math. Genius, right?
+Flashback to the "olden days"—circa 2020. Picture it: a couple of crafty
+TypeScript programmers figured out you could perform basic math by converting
+numbers into tuples. Tuples, with their blessed lengths known to TypeScript,
+became the secret sauce for integer math. Genius, right?
 
-Fast forward to the present. TypeScript 4.8 dropped and with it came the beefed-up support for template strings. This upgrade unlocked basic parser-like capabilities, paving the way for mathematical operations by first converting numbers to strings. It's like watching a clunky robot evolve into a sleek, agile machine.
+Fast forward to the present. TypeScript 4.8 dropped and with it came the
+beefed-up support for template strings. This upgrade unlocked basic parser-like
+capabilities, paving the way for mathematical operations by first converting
+numbers to strings. It's like watching a clunky robot evolve into a sleek, agile
+machine.
 
 ## Math Antecedents
 
-One of the strong points of the @recon-struct/utility-types library is that it
-supports composing boolean logic. To that end there are a number of antecedents
-(conditional types that return true or false) that can be used in the math
-module.
+One shining beacon in the TypeScript galaxy is the @recon-struct/utility-types
+library. It's got this neat trick of composing boolean logic, thanks to its
+collection of antecedents—conditional types that return true or false. These
+little gems come in handy in the math module, making it a powerful tool for all
+your computational needs.
 
 ### IsGreaterThanOrEqual
 
@@ -1649,3 +1667,8 @@ type Ex3 = Subtract<1, 2> // -1
 ## Conclusion
 
 As you can see we've got some powerful tools for doing wath in TypeScript.
+
+So, there you have it. My journey through the wild world of TypeScript math,
+where I've embraced the chaos, wrangled the code, and, most importantly,
+slathered everything with glorious unit tests. Because if you're not testing,
+are you even coding?
