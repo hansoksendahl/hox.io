@@ -1388,6 +1388,8 @@ export type Power<A extends number | bigint, B extends number | bigint> = ToNumb
 }
 ```
 
+![Utility-Types: Math](https://storage.googleapis.com/hox-io-blog-assets/2024-05-30-math.webp)
+
 Ever found yourself obsessing over unit tests? No? Well, welcome to my world,
 where I dive into unit tests like a sun-deprived hermit hitting the beach after
 a grim winter. I crave full coverage like a vampire craves blood. Yes, I'm that
