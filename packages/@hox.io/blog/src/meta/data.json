@@ -1,6 +1,10 @@
 {
   "articles": [
     {
+      "title": "🌌 I choose to live!",
+      "date": "2024-06-05"
+    },
+    {
       "title": "🛠️ Utility-Types: Math",
       "date": "2024-05-30"
     },
@@ -57,6 +61,14 @@
     [
       "test",
       2
+    ],
+    [
+      "Recovery",
+      1
+    ],
+    [
+      "Mental Health",
+      1
     ],
     [
       "CSS",
