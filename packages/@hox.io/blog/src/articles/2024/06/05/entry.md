@@ -3,10 +3,10 @@ live](https://storage.googleapis.com/hox-io-blog-assets/2024-06-05-sobriety.webp
 
 I don't talk about this as much as I should.
 
-I acted as secretary to my first sobriety meeting this week a big step for me. I
-had previously been through the same program once but it didn't stick. I always
-stayed away from service to others. I didn't want to be accountable to anybody
-and I didn't want anybody to be accountable to me.
+I acted as secretary to a sobriety meeting for the first time this week, a big
+step for me. I had previously been through the same program once but it didn't
+stick. I always stayed away from service to others. I didn't want to be
+accountable to anybody and I didn't want anybody to be accountable to me.
 
 Life became very hard for me in 2020 and inch by inch I slipped back into
 addiction taking it to a darker place than I had before. At the bottom of it I
