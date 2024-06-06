@@ -36,8 +36,8 @@ custody and file for a temporary family plan.
 
 I had managed to be sober for the days my son was with me but without him in the
 picture I was drowning in a sea of my own making. I got back in the sobriety
-program but no one wanted to touch me as a sponsor. Every day was a new day one
-of sobriety for a long time.
+program but no one wanted to touch me as a sponsor. Every day was a new "day
+one" of sobriety for a long time.
 
 Watching my finances dwindle from the combination of bootstrapping a business,
 the custody case , and my consumption I had to finally give in. I was licked, I
