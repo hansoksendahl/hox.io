@@ -49,16 +49,18 @@ the bottle but in a decision to let go of any sense that I had control.
 I let go of my lawyer. I stopped fighting in the custody case. I started being
 honest with myself, with people in the program, and with the representation in
 my case. I had to put my entrepreneurship efforts on hold and hope desperately
-to find a job somewhere, anywhere to avoid bankruptcy.
+to find a job somewhere, anywhere to avoid bankruptcy. I finally relinquished
+control and already it seems to be bearing fruit.
 
-After hundreds of job applications not hearing anything for almost six months. I
-am happy to say I have four job interviews this week. I acted as secretary in my
-first meeting on Monday. I am so happy to say that I know nothing except that my
-relationship with my son is not something I am willing to lose.
+After hundreds of job applications not hearing anything, I have four interviews
+this week. I am getting to spend more time with my son as he prepares to enter
+kindergarten. I know nothing except that my relationship with my son is not
+something I am willing to lose. It is worth giving up everything I thought I
+knew before.
 
 I will not let my afflictions, addictions, or resentments control my life. I
-don't know what the future holds but I know I have to let go to any notion that
-I have control over any of it.
+don't know what the future holds but I know I have to let go of any notion that
+I have control over what comes next.
 
 My will to power was a good survival mechanism until it wasn't anymore. When
 things stopped going my way I burned my kingdom to the ground and everything
