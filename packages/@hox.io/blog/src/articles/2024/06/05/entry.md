@@ -3,8 +3,8 @@ live](https://storage.googleapis.com/hox-io-blog-assets/2024-06-05-sobriety.webp
 
 I don't talk about this as much as I should.
 
-I acted as secretary to my first AA meeting this week a big step for me. I had
-previously been through the whole AA program once but it didn't stick. I always
+I acted as secretary to my first sobriety meeting this week a big step for me. I
+had previously been through the same program once but it didn't stick. I always
 stayed away from service to others. I didn't want to be accountable to anybody
 and I didn't want anybody to be accountable to me.
 
@@ -35,9 +35,9 @@ Washington but I never had formal custody on paper. Well, last year in summer
 custody and file for a temporary family plan.
 
 I had managed to be sober for the days my son was with me but without him in the
-picture I was drowning in a sea of my own making. I got back in the AA program
-but no one wanted to touch me as a sponsor. Every day was a new day one of
-sobriety for a long time.
+picture I was drowning in a sea of my own making. I got back in the sobriety
+program but no one wanted to touch me as a sponsor. Every day was a new day one
+of sobriety for a long time.
 
 Watching my finances dwindle from the combination of bootstrapping a business,
 the custody case , and my consumption I had to finally give in. I was licked, I
@@ -47,7 +47,7 @@ my biases. It seems the nullification of self I had been longing for was not in
 the bottle but in a decision to let go of any sense that I had control.
 
 I let go of my lawyer. I stopped fighting in the custody case. I started being
-honest with myself, with people in the AA program, and with the people in my
+honest with myself, with people in the program, and with the people in my
 custody case. I had to put my entrepreneurship efforts on hold and hope
 desperately to find a job somewhere, anywhere to avoid bankruptcy.
 
