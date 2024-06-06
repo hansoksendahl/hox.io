@@ -41,10 +41,10 @@ sobriety for a long time.
 
 Watching my finances dwindle from the combination of bootstrapping a business,
 the custody case , and my consumption I had to finally give in. I was licked, I
-was not capable of making decisions that led to successful outcomes. I would
-have to let go of my resentments, my attachments, and my biases to make any
-forward progress. It seems the nullification of self I had been longing for was
-not in the bottle but in a decision to let go of any sense that I had control.
+was not capable of making decisions that led to successful outcomes. To make any
+forward progress I would have to let go of my resentments, my attachments, and
+my biases. It seems the nullification of self I had been longing for was not in
+the bottle but in a decision to let go of any sense that I had control.
 
 I let go of my lawyer. I stopped fighting in the custody case. I started being
 honest with myself, with people in the AA program, and with the people in my
