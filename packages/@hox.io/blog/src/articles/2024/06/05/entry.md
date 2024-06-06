@@ -47,9 +47,9 @@ my biases. It seems the nullification of self I had been longing for was not in
 the bottle but in a decision to let go of any sense that I had control.
 
 I let go of my lawyer. I stopped fighting in the custody case. I started being
-honest with myself, with people in the program, and with the people in my
-custody case. I had to put my entrepreneurship efforts on hold and hope
-desperately to find a job somewhere, anywhere to avoid bankruptcy.
+honest with myself, with people in the program, and with the representation in
+my case. I had to put my entrepreneurship efforts on hold and hope desperately
+to find a job somewhere, anywhere to avoid bankruptcy.
 
 After hundreds of job applications not hearing anything for almost six months. I
 am happy to say I have four job interviews this week. I acted as secretary in my
