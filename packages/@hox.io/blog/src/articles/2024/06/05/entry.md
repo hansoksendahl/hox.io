@@ -60,16 +60,16 @@ knew before.
 
 I will not let my afflictions, addictions, or resentments control my life. I
 don't know what the future holds but I know I have to let go of any notion that
-I have control over what comes next.
+I have control over what comes next. I will go forward with the conviction that
+grace comes to those who ask with a clean conscience and hope in their heart.
 
 My will to power was a good survival mechanism until it wasn't anymore. When
-things stopped going my way I burned my kingdom to the ground and everything
-around me. I hope my story of the social and emotional desolation I eventually
-found myself in is enough to warn others off of my path. I will continue to
+things stopped going my way I burned my home to the ground and everything around
+me. I hope my story of the social and emotional desolation I found in the depths
+of my addiction is enough to warn others off of my path. I will continue to
 carry my story to other addicts and alcoholics and hope I can save a few lives
 in the process, both figuratively and literally.
 
 I choose to live.
 
-[Here’s a soundtrack to this
-rollercoaster](https://open.spotify.com/album/49K6hYDEr5M3GxIBBxlPf9).
+[The n+1 step](https://open.spotify.com/album/49K6hYDEr5M3GxIBBxlPf9).
