@@ -61,7 +61,7 @@ knew before.
 I will not let my afflictions, addictions, or resentments control my life. I
 don't know what the future holds but I know I have to let go of any notion that
 I have control over what comes next. I will go forward with the conviction that
-grace comes to those who ask with a clean conscience and hope in their heart.
+all I can do is be honest, humble, and hope.
 
 My will to power was a good survival mechanism until it wasn't anymore. When
 things stopped going my way I burned my home to the ground and everything around
