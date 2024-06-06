@@ -28,7 +28,7 @@ const Page = (props: PageProps) => {
         <footer></footer>
       </div>
       <aside class={leftNav}>
-        <strong class={sectionLabel}>Site Navigation</strong>
+        <strong class={sectionLabel}>Articles</strong>
         <ArticlesNav articles={meta.articles} />
       </aside>
     </>
