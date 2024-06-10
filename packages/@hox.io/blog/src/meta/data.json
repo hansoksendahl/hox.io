@@ -1,6 +1,10 @@
 {
   "articles": [
     {
+      "title": "Components",
+      "date": "2024-06-10"
+    },
+    {
       "title": "🌌 I choose to live!",
       "date": "2024-06-05"
     },
@@ -61,6 +65,14 @@
     [
       "test",
       2
+    ],
+    [
+      "Blog",
+      1
+    ],
+    [
+      "Feature Announcement",
+      1
     ],
     [
       "Recovery",

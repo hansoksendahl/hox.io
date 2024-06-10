@@ -1,5 +1,7 @@
 import { createAsync } from '@solidjs/router'
 import { createEffect, createSignal, onCleanup } from 'solid-js'
+import { Dynamic, render } from 'solid-js/web'
+import * as widgets from '~/components/widgets'
 import marked from '~/lib/marked'
 import client from '~/lib/trpc/client'
 import getDateParts from '~/utils/get-date-parts'
@@ -11,6 +13,7 @@ export interface ArticleProps {
 }
 
 const Article = (props: ArticleProps) => {
+  const { year, month, day } = getDateParts(props.date)
   const [articleContent, setArticleContent] = createSignal<string>()
   const [articleDeclaration, setArticleDeclaration] = createSignal<string>()
   let ref: HTMLDivElement | undefined
@@ -25,7 +28,6 @@ const Article = (props: ArticleProps) => {
         articleData()!.content,
       )
 
-      const { year, month, day } = getDateParts(props.date)
       const prettyDate = `${month} ${day}, ${year}`
       const content = await marked(
         `# ${articleData()!.title}\n<sub>${prettyDate}</sub>\n${markup}`,
@@ -36,12 +38,40 @@ const Article = (props: ArticleProps) => {
     }
   })
 
-  createEffect(() => {
+  createEffect(async () => {
     if (articleContent() || articleDeclaration()) {
+      let components = [] as any[]
       let editors = [] as any[]
 
+      // Import and render components
+      if (articleData()?.components) {
+        for (const name of articleData()!.components!) {
+          ref?.querySelectorAll(`${name}`).forEach(node => {
+            const attributes = Array.from(node.attributes).reduce(
+              (acc, { name, value }) => ({ ...acc, [name]: value }),
+              {},
+            )
+            const componentNode = document.createElement('div')
+
+            node.parentNode?.replaceChild(componentNode, node)
+
+            const dispose = render(
+              () => (
+                <Dynamic
+                  component={widgets[name as keyof typeof widgets]}
+                  {...attributes}
+                />
+              ),
+              componentNode,
+            )
+
+            components.push(dispose)
+          })
+        }
+      }
+
+      // Render code blocks
       ref?.querySelectorAll('pre code').forEach(async codeBlock => {
-        console.log('hi')
         const div = document.createElement('div')
         codeBlock.parentNode?.replaceChild(div, codeBlock)
 
@@ -82,6 +112,7 @@ const Article = (props: ArticleProps) => {
 
       onCleanup(() => {
         editors.forEach((editor: { dispose: () => void }) => editor.dispose())
+        components.forEach((dispose: () => void) => dispose())
       })
     }
   })

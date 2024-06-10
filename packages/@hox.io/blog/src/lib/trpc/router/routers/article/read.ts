@@ -10,7 +10,7 @@ const articleReadProcedure = publicProcedure
     const meta = await getMeta(input.date)
     const content = await getEntry(input.date)
 
-    return { title: meta.title, content }
+    return { title: meta.title, content, components: meta.components }
   })
 
 export default articleReadProcedure

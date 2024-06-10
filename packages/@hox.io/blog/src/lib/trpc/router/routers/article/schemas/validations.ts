@@ -8,3 +8,6 @@ export type Content = z.infer<typeof Content>
 
 export const Title = z.string()
 export type Title = z.infer<typeof Title>
+
+export const Components = z.array(z.string())
+export type Components = z.infer<typeof Components>
