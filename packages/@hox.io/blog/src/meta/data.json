@@ -1,7 +1,11 @@
 {
   "articles": [
     {
-      "title": "Components",
+      "title": "🧮 Navigation Mesh",
+      "date": "2024-06-11"
+    },
+    {
+      "title": "✨ Components",
       "date": "2024-06-10"
     },
     {
@@ -65,6 +69,18 @@
     [
       "test",
       2
+    ],
+    [
+      "Game Development",
+      1
+    ],
+    [
+      "Algorithms",
+      1
+    ],
+    [
+      "Navigation Mesh",
+      1
     ],
     [
       "Blog",
