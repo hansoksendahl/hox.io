@@ -1,5 +1,5 @@
 import { createAsync } from '@solidjs/router'
-import { createEffect, createSignal, onCleanup } from 'solid-js'
+import { createEffect, createMemo, createSignal, onCleanup } from 'solid-js'
 import { Dynamic, render } from 'solid-js/web'
 import * as widgets from '~/components/widgets'
 import marked from '~/lib/marked'
@@ -13,7 +13,7 @@ export interface ArticleProps {
 }
 
 const Article = (props: ArticleProps) => {
-  const { year, month, day } = getDateParts(props.date)
+  const dateParts = createMemo(() => getDateParts(props.date))
   const [articleContent, setArticleContent] = createSignal<string>()
   const [articleDeclaration, setArticleDeclaration] = createSignal<string>()
   let ref: HTMLDivElement | undefined
@@ -28,7 +28,7 @@ const Article = (props: ArticleProps) => {
         articleData()!.content,
       )
 
-      const prettyDate = `${month} ${day}, ${year}`
+      const prettyDate = `${dateParts().month} ${dateParts().day}, ${dateParts().year}`
       const content = await marked(
         `# ${articleData()!.title}\n<sub>${prettyDate}</sub>\n${markup}`,
       )
