@@ -1,6 +1,6 @@
 import { createEffect } from 'solid-js'
 import { container } from './nav-mesh.module.css'
-import { createMesh, createPoints } from './utils'
+import { createMesh, createPoints, randomVal } from './utils'
 
 const NavMesh = () => {
   let ref: HTMLCanvasElement | undefined
@@ -14,9 +14,10 @@ const NavMesh = () => {
       ref.setAttribute('height', `${height}px`)
 
       const nodes = createPoints(width, height, 400)
-      const start = nodes[Math.floor(Math.random() * nodes.length)]
-      const end = nodes[Math.floor(Math.random() * nodes.length)]
+      const start = nodes[Math.floor(randomVal(0, nodes.length - 1))]
+      const end = nodes[Math.floor(randomVal(0, nodes.length - 1))]
 
+      // Draw nodes
       for (const node of nodes) {
         ctx.beginPath()
         ctx.arc(node[0], node[1], 2, 0, 2 * Math.PI)
@@ -25,6 +26,7 @@ const NavMesh = () => {
 
       const mesh = createMesh(nodes)
 
+      // Draw edges
       for (const [node, connections] of mesh) {
         for (const { pos } of connections) {
           ctx.beginPath()
@@ -72,6 +74,7 @@ const NavMesh = () => {
       if (found) {
         let current = end
 
+        // Draw path
         while (current !== start) {
           const { pos } = path.get(current)!
           ctx.beginPath()
