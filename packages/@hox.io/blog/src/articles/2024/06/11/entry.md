@@ -133,14 +133,14 @@ export const createMesh = (nodes: Pos[]) => {
 }
 ```
 
-We have a basic mesh. The mesh has some redundancy do to the fact that each node
-has 6 edges to the closest other nodes. If we wanted to remove this redundancy
-we could use a method such as delanay triangulation to form perfect triangles
-between our nodes with no overlap. However the redundancy can actually be a
-benefit for path finding purposes.
+We have a basic mesh. The mesh has some redundancy due to the fact that each
+node has 6 edges to the closest other nodes. If we wanted to remove this
+redundancy we could use a method such as delanay triangulation to form perfect
+triangles between our nodes with no overlap. However the redundancy can actually
+be a benefit for path finding purposes.
 
-Then we'll define a simple solid-js component that performs path finding on
-a generated navMesh.
+Then we'll define a simple solid-js component that performs path finding on a
+generated navMesh.
 
 ```typescript
 import { createEffect } from 'solid-js'
