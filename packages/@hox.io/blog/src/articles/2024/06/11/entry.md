@@ -106,10 +106,12 @@ export const createPoints = (
 
 /**
  * Creates a mesh based on the given nodes.
- * The mesh is a map where each node is mapped to an array of nearby nodes with their distances.
+ * The mesh is a map where each node is mapped to an array of nearby nodes with
+ * their distances.
  *
  * @param nodes - An array of positions representing the nodes.
- * @returns A map where each node is mapped to an array of nearby nodes with their distances.
+ * @returns A map where each node is mapped to an array of nearby nodes with
+ *          their distances.
  */
 export const createMesh = (nodes: Pos[]) => {
   const mesh = new Map<Pos, { pos: Pos; distance: number }[]>()
