@@ -1,6 +1,10 @@
 {
   "articles": [
     {
+      "title": "☯ Bitcraft",
+      "date": "2024-07-06"
+    },
+    {
       "title": "🧮 Navigation Mesh",
       "date": "2024-06-11"
     },
@@ -69,6 +73,18 @@
     [
       "test",
       2
+    ],
+    [
+      "WebGL",
+      1
+    ],
+    [
+      "WebAssembly",
+      1
+    ],
+    [
+      "Performance Optimization",
+      1
     ],
     [
       "Game Development",

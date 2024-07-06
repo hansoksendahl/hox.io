@@ -1,9 +1,9 @@
 'use server'
 
 import { writeFile } from 'fs/promises'
-import getAllMeta from '~/utils/get-all-meta'
 import getArticleDates from '~/utils/get-article-dates'
-import getTagCounts from '~/utils/get-tag-counts'
+import getAllMeta from './get-all-meta'
+import getTagCounts from './get-tag-counts'
 
 const generateMeta = async () => {
   const dates = await getArticleDates()

@@ -6,14 +6,13 @@
     "packages/@hox.io/*"
   ],
   "scripts": {
-    "create-article": "scripts/create-article.sh",
     "create-env": "scripts/create-env.sh",
     "start-blog": "scripts/start-blog.sh",
     "start-portfolio": "scripts/start-portfolio.sh",
     "w": "scripts/w.sh"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.2",
     "prettier-plugin-organize-imports": "^3.2.4"
   },
   "volta": {

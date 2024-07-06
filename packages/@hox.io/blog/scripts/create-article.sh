@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ARTICLES_PATH="./packages/@hox.io/blog/src/articles"
+ARTICLES_PATH="./src/articles"
 
 DATE_YEAR=$(date +'%Y')
 DATE_MONTH=$(date +'%m')

@@ -10,11 +10,11 @@ shift
 # Derived variables
 PACKAGE_DIR="./packages/@hox.io/${PACKAGE}"
 
-if [ "${COMMAND}" == "install" ]; then
+if [ "${COMMAND}" == "add" ]; then
   # Change to the package directory
   cd "${PACKAGE_DIR}"
   # Install
-  pnpm install "${@}"
+  pnpm add "${@}"
 else
   # Run command
   pnpm run -C "${PACKAGE_DIR}" "${COMMAND}" "${@}"

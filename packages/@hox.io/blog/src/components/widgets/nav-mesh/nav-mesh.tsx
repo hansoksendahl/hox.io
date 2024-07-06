@@ -10,12 +10,12 @@ const NavMesh = () => {
       // Setup
       const { width, height } = ref.getBoundingClientRect()!
       const ctx = ref.getContext('2d')!
-      ref.setAttribute('width', `${width}px`)
-      ref.setAttribute('height', `${height}px`)
-
       const nodes = createPoints(width, height, 400)
       const start = nodes[Math.floor(randomVal(0, nodes.length - 1))]
       const end = nodes[Math.floor(randomVal(0, nodes.length - 1))]
+
+      ref.setAttribute('width', `${width}px`)
+      ref.setAttribute('height', `${height}px`)
 
       // Draw nodes
       for (const node of nodes) {

@@ -1,7 +1,7 @@
 'use server'
 
 import { readFile } from 'fs/promises'
-import { Article } from '~/@types/meta'
+import { Meta } from '~/@types/meta'
 
 const getMeta = async (date: string) => {
   const meta = await readFile(
@@ -9,7 +9,7 @@ const getMeta = async (date: string) => {
     'utf8',
   )
 
-  return JSON.parse(meta) as Article
+  return JSON.parse(meta) as Meta
 }
 
 export default getMeta

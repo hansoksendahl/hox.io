@@ -48,7 +48,7 @@ const Article = (props: ArticleProps) => {
         for (const name of articleData()!.components!) {
           ref?.querySelectorAll(`${name}`).forEach(node => {
             const attributes = Array.from(node.attributes).reduce(
-              (acc, { name, value }) => ({ ...acc, [name]: value }),
+              (acc, { name, value }) => ({ ...acc, [name]: JSON.parse(value) }),
               {},
             )
             const componentNode = document.createElement('div')

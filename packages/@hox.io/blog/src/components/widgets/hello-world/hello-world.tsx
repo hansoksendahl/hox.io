@@ -12,7 +12,6 @@ const HelloWorld = () => {
       const { width, height } = ref?.getBoundingClientRect()!
       const maxDim = Math.max(width, height)
       const midHeight = height / 2
-      const midWidth = width / 2
       ref.setAttribute('width', `${maxDim}px`)
       ref.setAttribute('height', `${maxDim}px`)
       ctx.fillStyle = 'gray'
