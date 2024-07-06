@@ -1473,7 +1473,7 @@ positive values.
 
 #### Floating Point Formats
 
-Currently, there are two floating point formats with a third,
+Currently, there are two floating point formats (Float32 and Float64) with a third,
 [Float16](https://github.com/tc39/proposal-float16array), in the works.
 
 ## BitCraft
