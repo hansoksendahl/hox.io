@@ -119,6 +119,8 @@ hr {
 
 .article-container code {
   font-family: 'Sono', monospace;
+  letter-spacing: -0.1em;
+  font-size: 0.95em;
 }
 
 .article-container table {
