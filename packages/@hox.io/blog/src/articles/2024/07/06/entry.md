@@ -1433,10 +1433,13 @@ visualization using WebGL or memory manipulation in WebAssembly. But let's be
 real, these aren't your everyday web programming tasks. So, let’s dive into the
 data formats of typed arrays, shall we?
 
-Digging deeper, we encounter ArrayBuffers and DataViews. An ArrayBuffer is just
-a collection of ones and zeros, strung together in a byte-length chain. A
-DataView is how you squint at this binary soup to make sense of it. Imagine each
-data format in typed arrays as a method of wrangling those ones and zeros into a
+Digging deeper, we encounter ArrayBuffers and DataViews. An
+[ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)
+is just a collection of ones and zeros, strung together in a byte-length chain.
+A
+[DataView](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView)
+is how you squint at this binary soup to make sense of it. Imagine each data
+format in typed arrays as a method of wrangling those ones and zeros into a
 format we can actually work with in code.
 
 ### Numerical Data
@@ -1507,7 +1510,7 @@ For instance, here's how you'd create a struct to retrieve a 3-tuple of `Uint8`
 values.
 
 ```typescript
-import { createStruct } from '@recon-struct/bitcraft'
+import { createStruct, u8 } from '@recon-struct/bitcraft'
 
 const struct = createStruct([u8, u8, u8]) // [Uint8, Uint8, Uint8]
 ```
@@ -1515,9 +1518,12 @@ const struct = createStruct([u8, u8, u8]) // [Uint8, Uint8, Uint8]
 ### Working With DataViews
 
 The [bitcraft](https://github.com/recon-struct/bitcraft) library makes it a
-breeze to work with JavaScript DataViews on ArrayBuffers, whether you're setting
-or getting data. It's like having a personal assistant for your binary data
-needs.
+breeze to work with JavaScript
+[DataViews](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView)
+on
+[ArrayBuffers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer),
+whether you're setting or getting data. It's like having a personal assistant
+for your binary data needs.
 
 ```typescript
 import { createStruct, u8, viewGet, viewSet } from '@recon-struct/bitcraft'
