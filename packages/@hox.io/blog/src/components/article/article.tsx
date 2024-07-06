@@ -5,8 +5,8 @@ import * as widgets from '~/components/widgets'
 import marked from '~/lib/marked'
 import client from '~/lib/trpc/client'
 import getDateParts from '~/utils/get-date-parts'
+import { articleContainer } from './article.module.css'
 import getDeclarationAndMarkup from './get-declaration-and-markup'
-import { articleContainer } from './index.module.css'
 
 export interface ArticleProps {
   date: string

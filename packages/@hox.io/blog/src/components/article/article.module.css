@@ -116,6 +116,30 @@ hr {
   content: '-- 𝔥𝔞𝔫𝔰 --';
 }
 
-.article-container p code {
+.article-container code {
   font-family: 'Sono', monospace;
+}
+
+.article-container table {
+  color: rgb(80, 80, 80);
+  display: table;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.article-container table tr {
+  display: table-row;
+}
+
+.article-container table th {
+  display: table-cell;
+  font-weight: 800;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.article-container table td {
+  display: table-cell;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgb(230, 230, 230);
 }

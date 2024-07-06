@@ -1376,6 +1376,8 @@ declare namespace DataTypes {
 }
 ```
 
+![Bitcraft illustration](https://storage.googleapis.com/hox-io-blog-assets/2024-07-06-bitcraft.webp)
+
 Working with binary data can often feel like deciphering a cryptic puzzle. And
 when it comes to performing linear algebra on top of that? It can quickly become
 overwhelming. That's why I developed a struct library called
