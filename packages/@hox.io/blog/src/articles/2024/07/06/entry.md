@@ -1554,7 +1554,7 @@ Consider this: Suppose you have 1000 points in your point cloud data. The
 ease.
 
 ```typescript
-import { createStruct, f64, u8, viewSet } from '@recon-struct/bitcraft'
+import { createStruct, f64, u8, viewSet, viewGet } from '@recon-struct/bitcraft'
 
 const struct = createStruct([
   [f64, f64, f64],
@@ -1565,10 +1565,17 @@ const view = new DataView(new ArrayBufer(struct.byteLength * pointCount))
 
 // Create points at random coordinates and set the color to white
 for (let i = 0; i < pointCount; i++) {
-  viewSet(view, struct, i, [
+  viewSet(view, struct, i * struct.byteLength, [
     [Math.random(), Math.random(), Math.random()],
     [255, 255, 255],
   ])
+}
+
+// Get the points one-by-one
+for (let i = 0; i < pointCount; i++>) {
+	const [point, color] = viewGet(view, struct, i * struct.byteLength)
+
+	// Do something with `point` and `color`
 }
 ```
 
