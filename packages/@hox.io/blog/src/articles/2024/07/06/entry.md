@@ -1572,10 +1572,10 @@ for (let i = 0; i < pointCount; i++) {
 }
 
 // Get the points one-by-one
-for (let i = 0; i < pointCount; i++>) {
-	const [point, color] = viewGet(view, struct, i * struct.byteLength)
+for (let i = 0; i < pointCount; i++) {
+  const [point, color] = viewGet(view, struct, i * struct.byteLength)
 
-	// Do something with `point` and `color`
+  // Do something with `point` and `color`
 }
 ```
 
