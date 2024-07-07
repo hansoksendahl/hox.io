@@ -1514,6 +1514,7 @@ values.
 import { createStruct, u8 } from '@recon-struct/bitcraft'
 
 const struct = createStruct([u8, u8, u8]) // [Uint8, Uint8, Uint8]
+
 console.log(struct.byteLength) // Logs: 3
 ```
 
