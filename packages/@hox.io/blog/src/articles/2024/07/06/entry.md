@@ -1338,7 +1338,8 @@ export declare const createStruct: <A extends Struct[]>(structs: [
  * @yields {any} The value extracted from the DataView based on the Struct.
  * @category Struct
  */
-export declare function createGetGen(view: DataView, struct: Struct, offset?: number, isLittleEndian?: boolean): Generator<any, void, unknown>;
+export declare function createGetGen(view: DataView, struct: Struct, offset?: number, isLittleEndian?: boolean): Generator<number | bigint | [
+], void, unknown>;
 /**
  * Retrieves structured data from a DataView object based on a given struct definition.
  *
@@ -1350,7 +1351,7 @@ export declare function createGetGen(view: DataView, struct: Struct, offset?: nu
  * @throws If the offset is outside the bounds of the DataView object's buffer.
  * @category Struct
  */
-export declare const viewGet: (view: DataView, struct: Struct, offset: number, isLittleEndian?: boolean) => any;
+export declare const viewGet: <A extends DataView, B extends Struct, C extends number, D extends boolean = boolean>(view: A, struct: B, offset: C, isLittleEndian?: D) => StructValue<B>;
 /**
  * Sets the values of a given struct in a DataView at the specified offset.
  *
@@ -1556,10 +1557,9 @@ ease.
 ```typescript
 import { createStruct, f64, u8, viewSet, viewGet } from '@recon-struct/bitcraft'
 
-const struct = createStruct([
-  [f64, f64, f64],
-  [u8, u8, u8],
-])
+const pointStruct = createStruct([f64, f64, f64])
+const colorStruct = createStruct([u8, u8, u8])
+const struct = createStruct([pointStruct, colorStruct])
 const pointCount = 1000
 const view = new DataView(new ArrayBufer(struct.byteLength * pointCount))
 
