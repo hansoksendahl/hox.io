@@ -1559,9 +1559,10 @@ ease.
 ```typescript
 import { createStruct, f64, u8, viewSet, viewGet } from '@recon-struct/bitcraft'
 
-const pointStruct = createStruct([f64, f64, f64])
-const colorStruct = createStruct([u8, u8, u8])
-const struct = createStruct([pointStruct, colorStruct])
+const struct = createStruct([
+  createStruct([f64, f64, f64]),
+  createStruct([u8, u8, u8]),
+])
 const pointCount = 1000
 const view = new DataView(new ArrayBufer(struct.byteLength * pointCount))
 
