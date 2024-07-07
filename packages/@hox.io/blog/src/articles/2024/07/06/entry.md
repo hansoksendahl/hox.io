@@ -1547,8 +1547,8 @@ To do this, you'll want to construct a struct of two three-tuples:
    represents `number` as a 64-bit floating point value based on the IEEE-754
    standard. So, to represent a 3D point, you'd use `[f64, f64, f64]`.
 2. The RGB color `[number, number, number]` Each channel of an RGB color can
-   have values from 0 to 255, so `u8` is perfect. Thus, an RGB value is `[u8,
-u8, u8]`.
+   have values from 0 to 255, so `u8` is perfect. Thus, an RGB value is
+   `[u8, u8, u8]`.
 
 Consider this: Suppose you have 1000 points in your point cloud data. The
 [bitcraft](https://github.com/recon-struct/bitcraft) library can handle it with
