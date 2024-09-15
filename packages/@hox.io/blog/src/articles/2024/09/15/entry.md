@@ -1,3 +1,5 @@
+![SigFigs Illustration](https://storage.googleapis.com/hox-io-blog-assets/2024-09-15-sig-figs.webp)
+
 > Ah, significant figures—the passive-aggressive punctuation of numbers in
 > science. They're like the "fine, whatever" of precision. You think you know
 > how accurate your data is? Well, think again. Significant figures are here to
