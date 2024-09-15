@@ -100,7 +100,16 @@ make our life easier when parsing those digits. The following TypeScript magic
 involves recursion because why solve a problem in a simple loop when you can
 flex?
 
-### My God, It's Full of Stars
+### Making it Concrete
+
+Let's take these rules and put them to task. We'll start by defining types for
+the different elements of a number that we care about. Then we will define the
+state needed by our recursive type to parse a significant figure. Finally we
+will define a recursive type that counts the number of significant figures in
+the string represntation of a number.
+
+> Keep in mind the JavaScript native number formats throw mathematical precision
+> away that is why we use strings to represent numbers.
 
 ```typescript
 type Zero = '0'
