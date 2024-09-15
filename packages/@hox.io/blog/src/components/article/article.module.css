@@ -146,3 +146,7 @@ hr {
   padding: 0.5rem 1rem;
   border-bottom: 1px solid rgb(230, 230, 230);
 }
+
+.article-container hr {
+  border-bottom: 1px solid rgb(230, 230, 230);
+}

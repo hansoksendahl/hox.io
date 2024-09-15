@@ -1,6 +1,10 @@
 {
   "articles": [
     {
+      "title": "Significant Figures",
+      "date": "2024-09-15"
+    },
+    {
       "title": "☯ Bitcraft",
       "date": "2024-07-06"
     },
@@ -64,7 +68,7 @@
   "tagCounts": [
     [
       "TypeScript",
-      6
+      7
     ],
     [
       "Utility-Types",
@@ -73,6 +77,10 @@
     [
       "test",
       2
+    ],
+    [
+      "Science",
+      1
     ],
     [
       "WebGL",
