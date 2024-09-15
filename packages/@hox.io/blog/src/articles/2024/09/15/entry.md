@@ -109,7 +109,7 @@ will define a recursive type that counts the number of significant figures in
 the string represntation of a number.
 
 > Keep in mind the JavaScript native number formats throw mathematical precision
-> away that is why we use strings to represent numbers.
+> away that is why we are going to use strings to represent numbers.
 
 ```typescript
 type Zero = '0'
