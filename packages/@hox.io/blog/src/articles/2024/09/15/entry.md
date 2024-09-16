@@ -105,7 +105,7 @@ flex?
 Let's take these rules and put them to task. We'll start by defining types for
 the different elements of a number that we care about. Then we will define the
 state needed by our recursive type to parse signifcant figures from the string
-represntation of a number. Finally we will define a recursive type that counts
+representation of a number. Finally we will define a recursive type that counts
 the number of significant figures in the string represntation of a number.
 
 > Keep in mind the JavaScript native number formats throw mathematical precision
