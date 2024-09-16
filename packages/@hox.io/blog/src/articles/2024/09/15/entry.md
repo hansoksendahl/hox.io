@@ -118,7 +118,7 @@ type NonZeroDigit = `${1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9}`
 
 type DecimalPoint = '.'
 
-type NegativeSymbol = '-'
+type NegativeSign = '-'
 
 interface SigFigsState<
 	A extends string[] = string[],
@@ -136,7 +136,7 @@ type SigFigs<
 	A extends string,
 	B extends SigFigsState = SigFigsState<[], false, false, []>,
 > = A extends `${infer C extends string}${infer D extends string}`
-	? C extends NegativeSymbol
+	? C extends NegativeSign
 		? SigFigs<D, B>
 		: C extends DecimalPoint
 			? SigFigs<
