@@ -63,6 +63,7 @@
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.33) 0px 3px 5px 0px;
   padding: 2vmin;
-  width: 50vw;
+  max-width: 50vw;
+  min-width: 800px;
   margin-bottom: 2vmin;
 }

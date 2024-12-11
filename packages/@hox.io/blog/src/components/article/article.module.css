@@ -121,6 +121,8 @@ hr {
   font-family: 'Sono', monospace;
   letter-spacing: -0.1em;
   font-size: 0.95em;
+  font-weight: bold;
+  color: #666666;
 }
 
 .article-container table {

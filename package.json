@@ -12,8 +12,8 @@
     "w": "scripts/w.sh"
   },
   "devDependencies": {
-    "prettier": "^3.3.2",
-    "prettier-plugin-organize-imports": "^3.2.4"
+    "prettier": "^3.3.3",
+    "prettier-plugin-organize-imports": "^4.1.0"
   },
   "volta": {
     "node": "18.20.2"

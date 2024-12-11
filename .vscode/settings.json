@@ -5,5 +5,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "typescript.tsdk": "node_modules/typescript/lib",
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "editor.rulers": [80],
+  "biome.enabled": false,
+  "editor.formatOnPaste": true
 }

@@ -6,18 +6,29 @@ import tsWorker from 'monaco-editor/esm/vs/language/typescript/ts.worker?worker'
 
 self.MonacoEnvironment = {
   getWorker(_, label) {
-    if (label === 'json') {
-      return new jsonWorker()
+    switch (label) {
+      case 'json': {
+        return new jsonWorker()
+      }
+      case 'css':
+      case 'scss':
+      case 'less': {
+        return new cssWorker()
+      }
+      case 'html':
+      case 'handlebars':
+      case 'razor': {
+        return new htmlWorker()
+      }
+      case 'typescript':
+      case 'ts':
+      case 'tsx':
+      case 'javascript': {
+        return new tsWorker()
+      }
+      default: {
+        return new editorWorker()
+      }
     }
-    if (label === 'css' || label === 'scss' || label === 'less') {
-      return new cssWorker()
-    }
-    if (label === 'html' || label === 'handlebars' || label === 'razor') {
-      return new htmlWorker()
-    }
-    if (label === 'typescript' || label === 'javascript') {
-      return new tsWorker()
-    }
-    return new editorWorker()
   },
 }

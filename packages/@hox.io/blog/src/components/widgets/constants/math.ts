@@ -1,0 +1,1 @@
+export const Pi2 = Math.PI * 2

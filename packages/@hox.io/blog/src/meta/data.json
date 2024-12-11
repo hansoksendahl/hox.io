@@ -1,6 +1,10 @@
 {
   "articles": [
     {
+      "title": "🧑‍🔬 AI Powered CLI Tool",
+      "date": "2024-12-10"
+    },
+    {
       "title": "🔬 Significant Figures",
       "date": "2024-09-15"
     },
@@ -66,89 +70,27 @@
     }
   ],
   "tagCounts": [
-    [
-      "TypeScript",
-      7
-    ],
-    [
-      "Utility-Types",
-      3
-    ],
-    [
-      "test",
-      2
-    ],
-    [
-      "Science",
-      1
-    ],
-    [
-      "WebGL",
-      1
-    ],
-    [
-      "WebAssembly",
-      1
-    ],
-    [
-      "Performance Optimization",
-      1
-    ],
-    [
-      "Game Development",
-      1
-    ],
-    [
-      "Algorithms",
-      1
-    ],
-    [
-      "Navigation Mesh",
-      1
-    ],
-    [
-      "Blog",
-      1
-    ],
-    [
-      "Feature Announcement",
-      1
-    ],
-    [
-      "Recovery",
-      1
-    ],
-    [
-      "Mental Health",
-      1
-    ],
-    [
-      "CSS",
-      1
-    ],
-    [
-      "Functional Programming",
-      1
-    ],
-    [
-      "AI",
-      1
-    ],
-    [
-      "Logic",
-      1
-    ],
-    [
-      "typeScript",
-      1
-    ],
-    [
-      "recreational mathematics",
-      1
-    ],
-    [
-      "functional programming",
-      1
-    ]
+    ["TypeScript", 8],
+    ["Utility-Types", 3],
+    ["AI", 2],
+    ["test", 2],
+    ["Bun", 1],
+    ["Science", 1],
+    ["WebGL", 1],
+    ["WebAssembly", 1],
+    ["Performance Optimization", 1],
+    ["Game Development", 1],
+    ["Algorithms", 1],
+    ["Navigation Mesh", 1],
+    ["Blog", 1],
+    ["Feature Announcement", 1],
+    ["Recovery", 1],
+    ["Mental Health", 1],
+    ["CSS", 1],
+    ["Functional Programming", 1],
+    ["Logic", 1],
+    ["typeScript", 1],
+    ["recreational mathematics", 1],
+    ["functional programming", 1]
   ]
 }
