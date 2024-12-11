@@ -1,3 +1,5 @@
+![K-Ink Illustration](https://storage.googleapis.com/hox-io-blog-assets/2024-12-10-k-ink.webp)
+
 # K-Ink: AI Agent Based CLI Framework
 
 **K-Ink** is an AI-powered, modular Command Line Interface (CLI) tool built for
