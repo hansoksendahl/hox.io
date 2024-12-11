@@ -475,4 +475,4 @@ does best: making you look good while pushing the boundaries of what AI can do.
 Grab your terminal, fire up K-Ink, and let the future begin. The genius is
 ready—are you?
 
-[K-Ink on GitHub](https://github.com/hansoksendahl/k-ink).
+🐙 [K-Ink on GitHub](https://github.com/hansoksendahl/k-ink).
