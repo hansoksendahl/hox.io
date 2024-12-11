@@ -1,6 +1,6 @@
 ![K-Ink Illustration](https://storage.googleapis.com/hox-io-blog-assets/2024-12-10-k-ink.webp)
 
-# K-Ink: AI Agent CLI Framework
+# K-Ink: Framework for AI CLI Tools
 
 **K-Ink** is an AI-powered, modular Command Line Interface (CLI) framework built
 for developers who want dynamic, open-ended agents based on the [ReAct
@@ -98,9 +98,12 @@ devs. It renders flexbox components like `<Box />` and `<Text />` effortlessly.
 Let’s install it:
 
 ```shell
-bun add ink react
+bun add ink react@^18
 bun add -D @types/react
 ```
+
+> Note(2024-12-10): React 19 came out 2024-12-05 and it doesn't play nicely with
+> Ink yet.
 
 ### Installing LangChain and LangGraph
 
