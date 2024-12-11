@@ -15,7 +15,8 @@
   padding: 2vmin;
   height: 8vmin;
   justify-content: center;
-  width: 50vw;
+  max-width: 50vw;
+  min-width: 800px;
 }
 
 .nav-content {
