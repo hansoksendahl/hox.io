@@ -384,7 +384,7 @@ it only makes sense to add the ability to read directories as well. Instead of
 writing the code ourselves, let’s ask K-Ink to do it for us:
 
 ```shell
-bun run k-ink -m "\
+bun run ./src/index.tsx -m "\
 Read the tools in ./src/lib/langchain/tools and create a new tool called
 directory-read that will read the contents of a directory. Update the exported
 tools in ./src/lib/langchain/tools/index.ts"
