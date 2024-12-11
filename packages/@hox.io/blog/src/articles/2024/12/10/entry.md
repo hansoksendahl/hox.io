@@ -376,7 +376,7 @@ This is where **K-Ink** starts to feel alive. It’s not just a helper—it’s 
 builder, a creator, and sometimes, a little bit of a show-off. Let’s see how it
 flexes its brilliance.
 
-## Creating a Tool to Read Directories
+### Example: Creating a Tool to Read Directories
 
 Let’s start with something small. We already have the ability to read files, so
 it only makes sense to add the ability to read directories as well. Instead of
