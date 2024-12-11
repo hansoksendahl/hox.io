@@ -9,7 +9,7 @@
 
 ---
 
-# Significant Figures: Because Life Isn't Precise, and Neither Are You
+## Significant Figures: Because Life Isn't Precise, and Neither Are You
 
 Significant figures are a method used in the sciences to, in essence, **control
 your delusions of mathematical grandeur.** Yeah, they’re a way to reduce the
